@@ -1,0 +1,9 @@
+{
+  "name": "Projeto Águia 2026 V4",
+  "short_name": "Águia V4",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#1d4ed8",
+  "description": "Jornada escolar gamificada com exercícios, XP, vidas, boletim e painel do responsável."
+}

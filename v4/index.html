@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1d4ed8" />
+  <title>Projeto Águia 2026 - V4</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="lockScreen" class="lock-screen">
+    <div class="lock-card">
+      <div class="eagle-big">🦅</div>
+      <h1>Projeto Águia</h1>
+      <p>Digite a senha da família para acessar.</p>
+      <input id="passwordInput" type="password" placeholder="Senha" />
+      <button id="unlockBtn" class="primary">Entrar</button>
+      <small>Senha inicial: aguia2026</small>
+    </div>
+  </div>
+
+  <div id="appShell" class="hidden">
+    <header class="app-header">
+      <div class="header-row">
+        <div>
+          <p class="eyebrow">Versão 4 • Aprender, não apenas estudar</p>
+          <h1>Projeto Águia 2026</h1>
+          <p class="sub">9º ano • GDF • Inglês • Latim • XP • Exercícios</p>
+        </div>
+        <div class="eagle">🦅</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="card dashboard">
+        <div>
+          <h2>Missão da semana</h2>
+          <p id="nextTask">Próxima atividade: carregando...</p>
+          <div class="progress-wrap">
+            <div class="progress-label"><span>Progresso semanal</span><span id="dashboardPercent">0%</span></div>
+            <div class="progress"><div id="dashboardBar"></div></div>
+          </div>
+        </div>
+        <div class="score">
+          <span id="weekRewardTop">R$ 0</span>
+          <small>previsto</small>
+        </div>
+      </section>
+
+      <section class="card gamification">
+        <div class="metric-grid">
+          <div><strong id="xpTotal">0 XP</strong><small id="levelName">Nível 1</small></div>
+          <div><strong id="lives">❤️❤️❤️❤️❤️</strong><small>vidas</small></div>
+          <div><strong id="accuracy">0%</strong><small>acertos</small></div>
+          <div><strong id="streak">0</strong><small>sequência</small></div>
+        </div>
+      </section>
+
+      <section class="tabs">
+        <button class="tab active" data-tab="today">Hoje</button>
+        <button class="tab" data-tab="quiz">Exercícios</button>
+        <button class="tab" data-tab="week">Semana</button>
+        <button class="tab" data-tab="month">Mês</button>
+        <button class="tab" data-tab="grades">Boletim</button>
+        <button class="tab" data-tab="parent">Responsável</button>
+        <button class="tab" data-tab="journey">Jornada</button>
+      </section>
+
+      <section id="today" class="panel active">
+        <div class="card challenge-card">
+          <div class="section-head">
+            <h2>Desafio do dia</h2>
+            <span class="pill purple">+10 XP</span>
+          </div>
+          <div id="dailyChallenge"></div>
+        </div>
+
+        <div class="card">
+          <div class="section-head">
+            <h2 id="todayTitle">Rotina de hoje</h2>
+            <button class="mini" id="viewWeekBtn">Ver semana</button>
+          </div>
+          <div id="tasks"></div>
+          <button id="saveDay" class="primary">Salvar dia</button>
+        </div>
+
+        <div class="card">
+          <h2>Foco inteligente</h2>
+          <p class="muted">As matérias fracas recebem mais exercícios e mais atenção.</p>
+          <div class="priority-grid">
+            <span class="danger">Inglês 3,30</span>
+            <span class="danger">Arte 3,80</span>
+            <span class="danger">Projeto 3,90</span>
+            <span class="warn">Português 5,30</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="quiz" class="panel">
+        <div class="card">
+          <h2>Exercícios por matéria</h2>
+          <p class="muted">Escolha uma matéria. Cada resposta correta soma XP; erros reduzem vidas.</p>
+          <div id="subjectButtons" class="subject-grid"></div>
+        </div>
+
+        <div class="card quiz-box">
+          <div class="section-head">
+            <h2 id="quizSubject">Escolha uma matéria</h2>
+            <span id="quizReward" class="pill">+5 XP</span>
+          </div>
+          <div id="quizContent">
+            <p class="muted">Os exercícios aparecem aqui.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Desempenho por matéria</h2>
+          <div id="subjectPerformance"></div>
+        </div>
+      </section>
+
+      <section id="week" class="panel">
+        <div class="card">
+          <h2>Visão geral da semana</h2>
+          <div id="weekOverview"></div>
+        </div>
+
+        <div class="card">
+          <h2>Recompensa semanal</h2>
+          <div class="progress-wrap">
+            <div class="progress-label"><span>Progresso</span><span id="progressText">0%</span></div>
+            <div class="progress"><div id="progressBar"></div></div>
+          </div>
+          <div class="reward-box">
+            <span>Valor previsto:</span>
+            <strong id="weekReward">R$ 0</strong>
+          </div>
+          <button id="resetWeek" class="ghost">Reiniciar semana</button>
+        </div>
+      </section>
+
+      <section id="month" class="panel">
+        <div class="card">
+          <h2>Calendário mensal</h2>
+          <p class="muted">Toque em um dia para ver a rotina planejada.</p>
+          <div id="monthCalendar"></div>
+          <div id="selectedDay" class="selected-day"></div>
+        </div>
+      </section>
+
+      <section id="grades" class="panel">
+        <div class="card">
+          <h2>Boletim inteligente</h2>
+          <p class="muted">Notas iniciais do 1º bimestre usadas para definir prioridades.</p>
+          <div id="gradesList"></div>
+        </div>
+
+        <div class="card">
+          <h2>Faltas</h2>
+          <div id="absenceList"></div>
+        </div>
+      </section>
+
+      <section id="parent" class="panel">
+        <div class="card">
+          <h2>Painel do responsável</h2>
+          <div class="metric-grid">
+            <div><strong id="parentReward">R$ 0</strong><small>Recompensa</small></div>
+            <div><strong id="parentPercent">0%</strong><small>Frequência</small></div>
+            <div><strong id="parentDone">0</strong><small>Tarefas</small></div>
+            <div><strong id="parentQuiz">0/0</strong><small>Exercícios</small></div>
+          </div>
+          <button id="approveWeek" class="primary">Aprovar semana</button>
+          <p id="approvalMsg" class="muted"></p>
+        </div>
+
+        <div class="card">
+          <h2>Relatório semanal</h2>
+          <div id="weeklyReport"></div>
+        </div>
+
+        <div class="card">
+          <h2>Backup</h2>
+          <button id="exportData" class="ghost">Exportar progresso</button>
+          <button id="logout" class="ghost">Bloquear app</button>
+        </div>
+      </section>
+
+      <section id="journey" class="panel">
+        <div class="card annual">
+          <h2>Missão até dezembro</h2>
+          <p id="daysLeft">Calculando dias restantes...</p>
+          <div class="progress"><div id="annualBar"></div></div>
+        </div>
+
+        <div class="card">
+          <h2>Plano até dezembro</h2>
+          <div id="months"></div>
+        </div>
+
+        <div class="card">
+          <h2>Latim</h2>
+          <div id="latinProgress"></div>
+        </div>
+
+        <div class="card">
+          <h2>Medalhas</h2>
+          <div class="badges" id="badges"></div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button data-tab="today" class="active">Hoje</button>
+      <button data-tab="quiz">Exerc.</button>
+      <button data-tab="week">Semana</button>
+      <button data-tab="grades">Boletim</button>
+      <button data-tab="parent">Pai</button>
+      <button data-tab="journey">Jornada</button>
+    </nav>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
