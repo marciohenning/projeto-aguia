@@ -1,0 +1,98 @@
+# 🦅 Projeto Águia - Versão 21
+
+## Sobre
+
+O Projeto Águia é um aplicativo educacional e formativo desenvolvido para acompanhar a evolução acadêmica, intelectual e espiritual de João Miguel, unindo os princípios do Trivium e Quadrivium com o Catecismo Menor de São Pio X.
+
+Seu objetivo é formar hábitos de estudo, disciplina, responsabilidade e vida cristã.
+
+---
+
+## ✨ Novidades da Versão 21
+
+### 🏛 Academia Restaurada
+- Retorno da interface clássica da Versão 18.
+- Botões grandes para cada disciplina.
+- Perguntas diferentes a cada acesso.
+- Histórico interno para evitar repetição.
+- Reinicialização automática quando todas forem respondidas.
+
+### 📊 Integração com o Boletim
+- Sistema preparado para importar boletins.
+- OCR para leitura automática de imagens.
+- Tabela de notas por bimestre.
+- Sincronização automática com a área do Responsável.
+
+### 🤖 IA Híbrida
+- Base de conhecimento offline.
+- Preparação para integração com IA online.
+- Recomendações automáticas de estudos conforme desempenho.
+
+### ✝ Catecismo Anual
+- Organização em 52 lições.
+- Uma lição para cada sábado do ano.
+- Progresso salvo automaticamente.
+- Sistema de favoritos.
+- Pesquisa interna.
+- XP e medalhas de progresso.
+
+### 📅 Calendário Pedagógico
+- Organização anual baseada no Trivium e Quadrivium.
+- Distribuição das disciplinas ao longo da semana.
+- Integração com as missões diárias.
+
+### 🦅 Minha Jornada
+- Tela inicial do aplicativo.
+- Apresentação guiada para crianças e adolescentes.
+- Explicação simples do funcionamento do sistema.
+
+### 👨 Painel do Responsável
+- Acompanhamento das notas.
+- Estatísticas da Academia.
+- Progresso do Catecismo.
+- Controle das recompensas.
+- Visualização das prioridades de estudo.
+
+---
+
+## 💾 Armazenamento
+
+Todos os dados são salvos localmente no navegador através do LocalStorage, permitindo que o aluno feche e abra o aplicativo sem perder seu progresso.
+
+---
+
+## 🔐 Senha padrão
+
+```
+aguia2026
+```
+
+---
+
+## 🌐 GitHub Pages
+
+Após publicar a pasta **v21**, o aplicativo estará disponível em:
+
+https://marciohenning.github.io/projeto-aguia/v21/
+
+---
+
+## 📌 Próximas Evoluções Planejadas
+
+- Banco de dados SQLite/IndexedDB.
+- OCR avançado para PDF.
+- Sincronização em nuvem.
+- Login para aluno e responsável.
+- IA integrada via API.
+- Dashboard estatístico avançado.
+- Backup automático do progresso.
+
+---
+
+**Lema do Projeto**
+
+> *Cognoscere, amare et servire Deum.*
+>
+> **Conhecer, amar e servir a Deus.**
+
+Projeto Águia © 2026
