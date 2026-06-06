@@ -1,0 +1,9 @@
+{
+  "name": "Projeto Águia 2026 V5",
+  "short_name": "Águia V5",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#1d4ed8",
+  "description": "Tutor escolar gamificado com inglês, latim, educação financeira, XP, revisão inteligente e Boss Battle."
+}
