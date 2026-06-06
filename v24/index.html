@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projeto Águia V24</title>
+<link rel="manifest" href="manifest.json"><link rel="stylesheet" href="styles.css">
+<script defer src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+</head>
+<body>
+<div id="lock" class="lock"><div class="box"><div class="logo">🦅</div><h1>Projeto Águia V24</h1><p class="latin">Cognoscere, amare et servire Deum.</p><input id="pass" type="password" placeholder="Senha familiar"><button id="enter">Entrar</button><small>Senha: aguia2026</small></div></div>
+<div id="app" class="hidden">
+<header><h1>🦅 Projeto Águia V24</h1><p class="latin">Cognoscere, amare et servire Deum.</p><p>Academia Livre Inteligente • Referências V22 • Catecismo preservado</p></header>
+<main>
+<section class="card hero"><div><h2>Missão do Dia</h2><p id="missionText">Complete tudo para liberar R$ 10.</p><div class="bar"><div id="dayBar"></div></div><small id="dayPct">0%</small></div><div class="money"><span id="todayMoney">R$ 0</span><small>hoje</small></div></section>
+<section class="card eagle-tip"><h2>🦅 Mensagem da Águia</h2><p id="eagleMessage"></p></section>
+<nav class="tabs">
+<button data-tab="journey" class="active">Minha Jornada</button><button data-tab="today">Missão</button><button data-tab="annual">Calendário</button><button data-tab="catechism">Catecismo Anual</button><button data-tab="academy">Academia</button><button data-tab="ai">IA Híbrida</button><button data-tab="grades">Boletim OCR</button><button data-tab="achievements">Conquistas</button><button data-tab="parent">Responsável</button>
+</nav>
+
+<section id="journey" class="panel active"><div class="card journey-card"><h2>🦅 Minha Jornada</h2><div id="journeyContent"></div><div class="journey-controls"><button id="journeyPrev" class="secondary">◀ Voltar</button><button id="journeyNext">Próximo ▶</button></div><button id="restartJourney" class="ghost">Rever do começo</button></div></section>
+
+<section id="today" class="panel"><div class="card"><h2 id="todayTitle"></h2><div id="tasks"></div><button id="goParent">Pedir aprovação</button></div><div class="card"><h2>Desafio do Dia</h2><div id="challenge"></div></div></section>
+
+<section id="annual" class="panel">
+<div class="card">
+<h2>📅 Calendário Anual</h2>
+<p class="muted">Toque em qualquer data para ver a missão, as disciplinas, o conteúdo previsto, os exercícios, os reforços e a lição do Catecismo quando for sábado.</p>
+<div class="legend">
+<span class="tag gram">📘 Gramática</span>
+<span class="tag dial">⚖️ Dialética</span>
+<span class="tag rhet">🎙️ Retórica</span>
+<span class="tag quad">📐 Quadrivium</span>
+<span class="tag syn">🏆 Síntese</span>
+<span class="tag cat">✝️ Catecismo</span>
+</div>
+<div class="details">
+<b>Referências do calendário:</b><br>
+✓ Disciplinas do dia<br>
+✓ Conteúdos previstos<br>
+✓ Exercícios recomendados<br>
+✓ Reforço por boletim<br>
+✓ Lição do Catecismo aos sábados
+</div>
+<div id="annualCalendar"></div>
+<div id="annualDetails" class="details"></div>
+</div>
+</section>
+
+<section id="catechism" class="panel">
+<div class="card"><h2>✝️ Catecismo Anual</h2><div class="grid"><div><b id="cateProgress">0%</b><small>progresso</small></div><div><b id="cateDone">0/52</b><small>sábados</small></div><div><b id="cateXP">0 XP</b><small>catecismo</small></div><div><b id="cateMedal">Primeiro Sábado</b><small>medalha</small></div></div><div class="bar"><div id="cateBar"></div></div><button id="continueCatechism">Continuar leitura deste sábado</button></div>
+<div class="card"><h2>🔎 Buscar no Catecismo</h2><input id="cateSearch" class="search" placeholder="Buscar: Credo, pecado, sacramentos..."><div id="cateSearchResults"></div></div>
+<div class="card"><h2>📖 Leitor Pedagógico</h2><div id="cateReader"></div></div>
+<div class="card"><h2>⭐ Favoritos</h2><div id="cateFavorites"></div></div>
+<div class="card"><h2>📅 52 Sábados do Ano</h2><div id="cateSchedule"></div></div>
+</section>
+
+<section id="academy" class="panel">
+<div class="card"><h2>🏛️ Academia Inteligente</h2><p class="muted">A prioridade inteligente orienta, mas João Miguel pode escolher livremente qualquer disciplina para estudar.</p>
+<div id="academyPriority" class="details"></div>
+<div id="subjects" class="subject-list"></div>
+<div id="quiz"></div>
+<button id="smartQuestion" class="ghost">🦅 Escolher para mim</button>
+<button id="resetQuestionHistory" class="ghost">Reiniciar histórico de perguntas</button></div>
+<div class="card"><h2>📊 Desempenho na Academia</h2><div id="academyStats"></div></div>
+<div class="card"><h2>📚 Conteúdos por disciplina</h2><div id="curriculum"></div></div>
+</section>
+
+<section id="ai" class="panel">
+<div class="card"><h2>🤖 Tutor Águia IA Híbrida</h2><p class="muted">Modo offline usa base interna. Modo online prepara dados para IA externa.</p><select id="aiMode"><option value="offline">Offline — base local</option><option value="online">Online — preparar prompt para IA externa</option></select><textarea id="localAIQuestion" placeholder="Pergunte algo..."></textarea><button id="askLocalAI">Perguntar</button><div id="localAIAnswer" class="details"></div></div>
+<div class="card"><h2>📚 Base de Conhecimento</h2><button id="copyKnowledge" class="ghost">Copiar base para IA externa</button></div>
+<div class="card"><h2>Relatório para IA externa</h2><button id="runAI">Atualizar relatório</button><button id="copyAIPrompt" class="ghost">Copiar relatório</button><textarea id="aiPrompt" readonly></textarea></div>
+</section>
+
+<section id="grades" class="panel">
+<div class="card"><h2>📄 Boletim com OCR</h2><p class="muted">Importe imagem do boletim para tentativa de OCR. Revise antes de aplicar.</p><input id="reportFile" type="file" accept=".pdf,image/png,image/jpeg,image/jpg,image/*"><div id="ocrStatus" class="details">Aguardando arquivo.</div><div id="reportPreview" class="report-preview"></div></div>
+<div class="card"><h2>🧾 Texto lido pelo OCR</h2><textarea id="ocrText" placeholder="O texto extraído aparecerá aqui."></textarea><button id="parseGrades">Detectar notas e preencher tabela</button><div id="parseResult" class="details"></div></div>
+<div class="card"><h2>📊 Tabela de Notas por Bimestre</h2><div id="gradesTable"></div><button id="saveGrades">Salvar notas</button><button id="exportGrades" class="ghost">Exportar boletim JSON</button><input id="importGrades" type="file" accept=".json" class="file-input"><label for="importGrades" class="fake-button">Importar boletim JSON</label></div>
+</section>
+
+<section id="achievements" class="panel"><div class="card"><h2>🏅 Conquistas</h2><div id="achievementList"></div></div><div class="card"><h2>🗺️ Mapa da Jornada</h2><div id="campaignMap"></div></div></section>
+
+<section id="parent" class="panel"><div class="card"><h2>👨 Painel do Responsável</h2><div class="grid"><div><b id="weekMoney">R$ 0</b><small>semana</small></div><div><b id="tasksDone">0/0</b><small>tarefas hoje</small></div><div><b id="critical">Matemática</b><small>prioridade</small></div><div><b id="xp">0 XP</b><small>experiência</small></div></div><button id="approve">Aprovar missão e liberar R$ 10</button><p id="approval"></p></div><div class="card"><h2>📊 Notas sincronizadas do Boletim</h2><div id="parentGradesTable"></div></div><div class="card"><h2>🏛️ Desempenho na Academia</h2><div id="parentAcademyStats"></div></div><div class="card"><h2>✝️ Formação Cristã</h2><div id="parentCatechism"></div></div><div class="card"><button id="export">Exportar progresso</button><button id="logout">Bloquear app</button></div></section>
+</main>
+<nav class="bottom"><button data-tab="journey">Jornada</button><button data-tab="today">Missão</button><button data-tab="academy">Acad.</button><button data-tab="grades">Notas</button><button data-tab="ai">IA</button><button data-tab="parent">Pai</button></nav>
+</div><script src="app.js"></script></body></html>
