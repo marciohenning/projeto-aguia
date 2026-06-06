@@ -1,0 +1,16 @@
+# 🦅 Projeto Águia - Versão 16
+
+Aplicativo educacional para acompanhamento dos estudos de João Miguel, baseado no método clássico de formação (Trivium e Quadrivium), integrado ao Catecismo Menor de São Pio X.
+
+## Recursos
+
+- 📅 Calendário anual de estudos
+- ✝️ Leitura semanal do Catecismo
+- 📖 Texto convertido para HTML
+- 🔎 Busca no conteúdo
+- ⭐ Favoritos
+- 🏆 Sistema de XP e progresso
+- 🤖 Relatório para IA
+- 📱 PWA (instalável no celular)
+
+## Estrutura
