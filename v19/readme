@@ -1,0 +1,190 @@
+# 🦅 Projeto Águia — Versão 19
+
+> **Cognoscere, amare et servire Deum.**
+>
+> *Conhecer, amar e servir a Deus.*
+
+---
+
+# 📖 Sobre o Projeto
+
+O Projeto Águia é uma plataforma de formação intelectual, acadêmica, financeira e espiritual, desenvolvida para acompanhar a evolução de João Miguel ao longo do Ensino Fundamental.
+
+O aplicativo integra:
+
+* 📚 Ensino Fundamental (9º Ano);
+* 🏛 Trivium e Quadrivium;
+* ✝️ Catecismo Menor de São Pio X;
+* 🇺🇸 Inglês;
+* 🏛 Latim;
+* 💰 Educação Financeira;
+* 🤖 Inteligência Artificial;
+* 🏅 Sistema de Conquistas;
+* 📊 Controle de Boletins Escolares.
+
+---
+
+# 🚀 Novidades da Versão 19
+
+## 🏛 Academia Inteligente
+
+A aba Academia agora possui um sistema de rotação de perguntas.
+
+* evita repetir perguntas já respondidas;
+* apresenta novas questões a cada acesso;
+* quando todas forem utilizadas, reinicia automaticamente o ciclo.
+
+O objetivo é aumentar a retenção do conteúdo e evitar respostas decoradas.
+
+---
+
+## 🤖 Tutor Águia IA Local
+
+Foi adicionada uma IA interna para consultas rápidas.
+
+Exemplos:
+
+* Como estudar Matemática?
+* Qual matéria devo priorizar?
+* Como revisar o Catecismo?
+* Como organizar minha rotina de estudos?
+
+O Tutor Águia funciona localmente, sem necessidade de conexão com APIs externas.
+
+---
+
+## 📊 Sistema de Boletins
+
+Nova aba para acompanhamento das notas escolares.
+
+### Recursos:
+
+* Importação de arquivos:
+
+  * PDF
+  * PNG
+  * JPG
+  * JPEG
+
+* Registro das notas do:
+
+  * 1º Bimestre
+  * 2º Bimestre
+  * 3º Bimestre
+  * 4º Bimestre
+
+* Cálculo automático das médias.
+
+* Armazenamento local das informações.
+
+---
+
+## ✝️ Catecismo Anual Pedagógico
+
+O Catecismo Menor de São Pio X permanece dividido em 52 lições semanais.
+
+Melhorias:
+
+* perguntas em destaque;
+* numeração em negrito;
+* subtítulos destacados;
+* leitura organizada pedagogicamente;
+* progresso salvo automaticamente.
+
+---
+
+## 🦅 Minha Jornada
+
+O aplicativo inicia sempre por esta aba.
+
+Ela apresenta o propósito do Projeto Águia e conduz a criança ou adolescente pelas etapas do estudo.
+
+---
+
+## 💰 Sistema de Recompensas
+
+Ao concluir todas as tarefas do dia e receber aprovação do responsável:
+
+**Recompensa diária: R$ 10,00**
+
+Distribuição sugerida:
+
+| Destino     | Valor   |
+| ----------- | ------- |
+| Uso pessoal | R$ 7,00 |
+| Poupança    | R$ 2,00 |
+| Caridade    | R$ 1,00 |
+
+---
+
+## 💾 Banco de Dados Interno
+
+Toda a evolução do aluno é armazenada localmente através do navegador.
+
+São preservados:
+
+* tarefas realizadas;
+* progresso do Catecismo;
+* XP;
+* conquistas;
+* favoritos;
+* histórico das perguntas;
+* boletins escolares;
+* recompensas financeiras.
+
+Mesmo fechando o aplicativo, as informações permanecem salvas.
+
+---
+
+## 📱 Funcionalidades
+
+* 🦅 Minha Jornada
+* 📚 Missão do Dia
+* 📆 Calendário Anual
+* ✝️ Catecismo Anual
+* 🏛 Academia Inteligente
+* 🤖 Tutor Águia IA
+* 📊 Boletim Escolar
+* 💰 Educação Financeira
+* 🏅 Conquistas
+* 👨 Painel do Responsável
+
+---
+
+## 🔐 Senha padrão
+
+```text
+aguia2026
+```
+
+---
+
+## 🌐 GitHub Pages
+
+```text
+https://marciohenning.github.io/projeto-aguia/v19/
+```
+
+---
+
+## 📂 Estrutura da versão
+
+```text
+v19/
+├── index.html
+├── app.js
+├── styles.css
+├── manifest.json
+├── service-worker.js
+└── README.md
+```
+
+---
+
+# 🎯 Missão
+
+Formar um jovem capaz de unir excelência acadêmica, disciplina intelectual, responsabilidade financeira e vida cristã.
+
+> **Cognoscere, amare et servire Deum.**
+
+**Conhecer • Amar • Servir**
