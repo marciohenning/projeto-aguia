@@ -1,0 +1,210 @@
+# 🦅 Projeto Águia — Versão 15
+
+## Lema
+
+> **Cognoscere, amare et servire Deum.**
+>
+> *Conhecer, amar e servir a Deus.*
+
+---
+
+# 📖 Sobre o Projeto
+
+O Projeto Águia é um aplicativo educacional, familiar e cristão desenvolvido para acompanhar o crescimento intelectual, acadêmico, financeiro e espiritual de João Miguel.
+
+O sistema integra:
+
+- Currículo do 9º Ano do Ensino Fundamental;
+- Trivium e Quadrivium;
+- Inglês e Latim;
+- Educação Financeira;
+- Formação Católica;
+- Sistema de recompensas;
+- Exercícios interativos;
+- Planejamento assistido por IA;
+- Catecismo Menor de São Pio X.
+
+---
+
+# 🚀 Novidades da Versão 15
+
+Esta versão foi reconstruída para simplificar a publicação no GitHub Pages.
+
+## ✅ Estrutura simplificada
+
+A V15 utiliza apenas seis arquivos principais:
+
+- index.html
+- app.js
+- styles.css
+- manifest.json
+- service-worker.js
+- README.md
+
+Isso evita erros de publicação e facilita futuras atualizações.
+
+---
+
+## ✝️ Catecismo Integrado
+
+Toda a programação anual do Catecismo de São Pio X está incorporada diretamente no aplicativo.
+
+Funcionalidades:
+
+- 52 leituras anuais;
+- Progresso dos sábados;
+- Busca por temas;
+- Favoritos;
+- XP de Catecismo;
+- Medalhas de progresso.
+
+Não é mais necessário enviar dezenas de arquivos HTML separados.
+
+---
+
+## 📆 Calendário Anual
+
+O calendário distribui automaticamente os estudos conforme:
+
+### Segunda
+Gramática
+
+### Terça
+Dialética
+
+### Quarta
+Retórica
+
+### Quinta
+Quadrivium
+
+### Sexta
+Síntese e revisão geral
+
+### Sábado
+Catecismo de São Pio X
+
+### Domingo
+Vida Cristã e revisão espiritual
+
+---
+
+# 🏛 Organização Pedagógica
+
+## Trivium
+
+- Português
+- Inglês
+- Latim
+- Catecismo
+
+## Dialética
+
+- Matemática
+- Ciências
+- Educação Financeira
+
+## Retórica
+
+- Produção textual
+- Projeto escolar
+- Apresentação oral
+
+## Quadrivium
+
+- Aritmética
+- Geometria
+- Música
+- Astronomia
+
+---
+
+# 💰 Sistema de Recompensas
+
+Ao concluir todas as tarefas do dia e receber aprovação do responsável:
+
+## Recompensa diária
+
+**R$ 10,00**
+
+Distribuição sugerida:
+
+| Destino | Valor |
+|----------|---------|
+| Uso pessoal | R$ 7,00 |
+| Poupança | R$ 2,00 |
+| Caridade | R$ 1,00 |
+
+---
+
+# 🤖 Assistente IA
+
+A IA auxilia na organização dos estudos através de:
+
+- análise das notas escolares;
+- identificação da disciplina prioritária;
+- acompanhamento do Catecismo;
+- geração de relatórios;
+- criação de novos exercícios.
+
+---
+
+# 📱 Funcionalidades
+
+- 🦅 Missão do Dia
+- 📆 Calendário Anual
+- ✝️ Catecismo Integrado
+- 🏛 Academia
+- 🧠 Exercícios Interativos
+- 💰 Educação Financeira
+- 🇺🇸 Inglês
+- 🏛 Latim
+- 🤖 Planejamento com IA
+- 👨 Painel do Responsável
+- 📊 Exportação de progresso
+
+---
+
+# 🔐 Senha padrão
+
+```
+aguia2026
+```
+
+---
+
+# 🌐 Publicação
+
+Após criar a pasta `v15` no GitHub, o aplicativo poderá ser acessado em:
+
+```
+https://marciohenning.github.io/projeto-aguia/v15/
+```
+
+---
+
+# 📜 Histórico
+
+| Versão | Evolução |
+|----------|----------------------------|
+| V1-V4 | Estrutura inicial |
+| V5 | Exercícios e tutor |
+| V6 | Sistema de recompensas |
+| V7 | Trivium e Quadrivium |
+| V8 | Calendário anual |
+| V9 | Jornada do aluno |
+| V10 | Integração com IA |
+| V11 | Catecismo anual |
+| V12 | Busca e favoritos |
+| V13-V14 | Testes de leitura completa |
+| **V15** | **Arquitetura simplificada e Catecismo integrado ao aplicativo** |
+
+---
+
+# 🎯 Objetivo
+
+Formar um jovem disciplinado, virtuoso e preparado para unir excelência acadêmica, responsabilidade financeira e vida cristã.
+
+> **Cognoscere, amare et servire Deum.**
+
+**Conhecer • Amar • Servir**
