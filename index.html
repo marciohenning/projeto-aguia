@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1d4ed8" />
+  <title>Projeto Águia 2026</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Jornada Escolar</p>
+      <h1>Projeto Águia 2026</h1>
+      <p class="sub">João Miguel • 9º ano • Inglês • Latim • Disciplina</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="card hero">
+      <div>
+        <h2>Meta do mês</h2>
+        <p id="monthGoal">Carregando...</p>
+      </div>
+      <div class="score">
+        <span id="monthTotal">R$ 0</span>
+        <small>ganhos no mês</small>
+      </div>
+    </section>
+
+    <section class="tabs">
+      <button class="tab active" data-tab="today">Hoje</button>
+      <button class="tab" data-tab="week">Semana</button>
+      <button class="tab" data-tab="journey">Jornada</button>
+    </section>
+
+    <section id="today" class="panel active">
+      <div class="card">
+        <h2 id="todayTitle">Rotina de hoje</h2>
+        <div id="tasks"></div>
+        <button id="saveDay" class="primary">Salvar dia</button>
+      </div>
+    </section>
+
+    <section id="week" class="panel">
+      <div class="card">
+        <h2>Recompensa semanal</h2>
+        <div class="progress-wrap">
+          <div class="progress-label"><span>Progresso</span><span id="progressText">0%</span></div>
+          <div class="progress"><div id="progressBar"></div></div>
+        </div>
+        <div class="reward-box">
+          <span>Valor previsto:</span>
+          <strong id="weekReward">R$ 0</strong>
+        </div>
+        <button id="resetWeek" class="ghost">Reiniciar semana</button>
+      </div>
+
+      <div class="card">
+        <h2>Critérios</h2>
+        <ul class="rules">
+          <li>100% da semana: R$ 50</li>
+          <li>90%: R$ 45</li>
+          <li>80%: R$ 40</li>
+          <li>70%: R$ 30</li>
+          <li>Menos de 70%: sem pagamento</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="journey" class="panel">
+      <div class="card">
+        <h2>Jornada mensal</h2>
+        <div id="months"></div>
+      </div>
+
+      <div class="card">
+        <h2>Bônus bimestrais</h2>
+        <label class="check"><input type="checkbox" data-bonus="30"> Inglês ≥ 6,0 (+R$30)</label>
+        <label class="check"><input type="checkbox" data-bonus="50"> Nenhuma matéria abaixo de 5,0 (+R$50)</label>
+        <label class="check"><input type="checkbox" data-bonus="100"> Todas as matérias acima de 6,0 (+R$100)</label>
+        <div class="reward-box">
+          <span>Bônus marcados:</span>
+          <strong id="bonusTotal">R$ 0</strong>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Medalhas</h2>
+        <div class="badges">
+          <span>🥉 Bronze</span>
+          <span>🥈 Prata</span>
+          <span>🥇 Ouro</span>
+          <span>🏆 Águia de Ouro</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <button data-tab="today" class="active">Hoje</button>
+    <button data-tab="week">Semana</button>
+    <button data-tab="journey">Jornada</button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
