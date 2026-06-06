@@ -1,0 +1,9 @@
+{
+  "name": "Projeto Águia 2026 V3",
+  "short_name": "Águia V3",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#1d4ed8",
+  "description": "Jornada escolar gamificada com painel do responsável, boletim e calendário."
+}
