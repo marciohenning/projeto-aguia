@@ -1,0 +1,197 @@
+# 🦅 Projeto Águia — Versão 24
+
+## Visão Geral
+
+O **Projeto Águia** é uma plataforma de formação acadêmica, intelectual e espiritual, desenvolvida para unir os estudos do **Trivium**, do **Quadrivium** e do **Catecismo Menor de São Pio X** em uma jornada organizada e pedagógica.
+
+A Versão 24 representa uma importante evolução do sistema, equilibrando a inteligência do aplicativo com a autonomia do aluno.
+
+---
+
+# ✨ Novidades da Versão 24
+
+## 🏛️ Academia Livre Inteligente
+
+A Academia foi reformulada para oferecer uma experiência mais natural e pedagógica.
+
+### 🦅 Prioridade Inteligente
+
+O sistema continua analisando:
+
+* notas do boletim;
+* histórico de erros;
+* desempenho por disciplina;
+* tempo sem estudar determinada matéria.
+
+Com base nessas informações, a Águia sugere a disciplina mais importante para aquele momento.
+
+Exemplo:
+
+> **Prioridade Inteligente:** 🧮 Matemática
+
+---
+
+### 📚 Liberdade de Escolha
+
+Mesmo com a recomendação automática, o aluno pode escolher livremente qualquer disciplina para estudar.
+
+Disciplinas disponíveis:
+
+* 📝 Português
+* 🧮 Matemática
+* 🔬 Ciências
+* 🏛 História
+* 🌎 Geografia
+* 🇺🇸 Inglês
+* 🏛 Latim
+* ✝️ Catecismo
+* 🎨 Arte
+* 💰 Educação Financeira
+* 💡 Projeto
+
+---
+
+### 🤖 Escolher para Mim
+
+Novo botão especial:
+
+**🦅 Escolher para Mim**
+
+Ao ser acionado, a Inteligência do Projeto Águia seleciona automaticamente a disciplina mais importante para revisão.
+
+---
+
+## 📊 Barras de Evolução por Disciplina
+
+A Academia agora apresenta uma visão rápida do desempenho em cada matéria, facilitando a identificação dos pontos que precisam de reforço.
+
+---
+
+# 📅 Calendário Anual
+
+Foram preservadas todas as referências da Versão 22:
+
+* ✓ Disciplinas do dia;
+* ✓ Conteúdos previstos;
+* ✓ Exercícios recomendados;
+* ✓ Reforço baseado no boletim;
+* ✓ Lição do Catecismo aos sábados.
+
+Ao clicar em qualquer data, o aluno pode visualizar toda a programação daquele dia.
+
+---
+
+# ✝️ Catecismo Anual
+
+O módulo Catecismo Anual permanece exatamente no padrão aprovado das versões anteriores.
+
+Recursos disponíveis:
+
+* 52 lições anuais;
+* Conversão do PDF para HTML;
+* Barra de progresso;
+* Sistema de XP;
+* Medalhas;
+* Pesquisa interna;
+* Favoritos;
+* Leitor pedagógico;
+* Salvamento automático.
+
+---
+
+# 📄 Boletim OCR
+
+* Importação de PDF.
+* Importação de imagens (PNG, JPG e JPEG).
+* Leitura automática por OCR.
+* Atualização da tabela de notas.
+* Sincronização com o Painel do Responsável.
+
+---
+
+# 🤖 IA Híbrida
+
+Sistema preparado para operar em dois modos:
+
+### Offline
+
+Base de conhecimento local integrada ao aplicativo.
+
+### Online
+
+Estrutura preparada para futura integração com serviços externos de Inteligência Artificial.
+
+---
+
+# 👨 Painel do Responsável
+
+Permite acompanhar:
+
+* notas;
+* progresso acadêmico;
+* evolução no Catecismo;
+* XP acumulado;
+* desempenho nas disciplinas;
+* prioridades inteligentes sugeridas pela Águia.
+
+---
+
+# 💾 Armazenamento
+
+O progresso é salvo automaticamente no navegador, incluindo:
+
+* Academia;
+* Catecismo;
+* Boletim;
+* XP;
+* Medalhas;
+* Conquistas;
+* Histórico de perguntas;
+* Configurações da jornada.
+
+---
+
+# 🔐 Senha padrão
+
+```text
+aguia2026
+```
+
+---
+
+# 📁 Estrutura do Projeto
+
+```text
+v24/
+│
+├── index.html
+├── app.js
+├── styles.css
+├── manifest.json
+├── service-worker.js
+└── README.md
+```
+
+---
+
+# 🌐 Publicação
+
+Após enviar os arquivos para a pasta **v24**, o aplicativo estará disponível em:
+
+```text
+https://marciohenning.github.io/projeto-aguia/v24/
+```
+
+---
+
+# 📜 Lema
+
+> **Cognoscere, amare et servire Deum.**
+
+**Conhecer, amar e servir a Deus.**
+
+---
+
+**Projeto Águia — Versão 24**
+
+© 2026
