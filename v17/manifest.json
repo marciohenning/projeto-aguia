@@ -1,0 +1,8 @@
+{
+  "name": "Projeto Águia V17",
+  "short_name": "Águia V17",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#0f2f70",
+  "background_color": "#f4f7fb"
+}

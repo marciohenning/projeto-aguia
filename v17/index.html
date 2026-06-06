@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projeto Águia V17</title>
+<link rel="manifest" href="manifest.json"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="lock" class="lock"><div class="box"><div class="logo">🦅</div><h1>Projeto Águia V17</h1><p class="latin">Cognoscere, amare et servire Deum.</p><input id="pass" type="password" placeholder="Senha familiar"><button id="enter">Entrar</button><small>Senha: aguia2026</small></div></div>
+<div id="app" class="hidden">
+<header><h1>🦅 Projeto Águia V17</h1><p class="latin">Cognoscere, amare et servire Deum.</p><p>Catecismo Anual • Minha Jornada • Conquistas • IA • Calendário</p></header>
+<main>
+<section class="card hero"><div><h2>Missão do Dia</h2><p id="missionText">Complete tudo para liberar R$ 10.</p><div class="bar"><div id="dayBar"></div></div><small id="dayPct">0%</small></div><div class="money"><span id="todayMoney">R$ 0</span><small>hoje</small></div></section>
+<section class="card eagle-tip"><h2>🦅 Mensagem da Águia</h2><p id="eagleMessage"></p></section>
+
+<nav class="tabs">
+<button data-tab="today" class="active">Missão</button>
+<button data-tab="annual">Calendário</button>
+<button data-tab="catechism">Catecismo Anual</button>
+<button data-tab="academy">Academia</button>
+<button data-tab="ai">IA</button>
+<button data-tab="achievements">Conquistas</button>
+<button data-tab="journey">Minha Jornada</button>
+<button data-tab="parent">Responsável</button>
+</nav>
+
+<section id="today" class="panel active"><div class="card"><h2 id="todayTitle"></h2><div id="tasks"></div><button id="goParent">Pedir aprovação</button></div><div class="card"><h2>Desafio do Dia</h2><div id="challenge"></div></div></section>
+
+<section id="annual" class="panel"><div class="card"><h2>📆 Calendário Anual</h2><p class="muted">O primeiro sábado do ano é a Lição 1. Cada sábado seguinte avança uma lição até completar 52.</p><div id="annualCalendar"></div><div id="annualDetails" class="details"></div></div></section>
+
+<section id="catechism" class="panel">
+<div class="card"><h2>✝️ Catecismo Anual</h2><p class="muted">Texto real do PDF convertido para HTML e distribuído do primeiro ao último sábado do ano.</p><div class="grid"><div><b id="cateProgress">0%</b><small>progresso</small></div><div><b id="cateDone">0/52</b><small>sábados</small></div><div><b id="cateXP">0 XP</b><small>catecismo</small></div><div><b id="cateMedal">Primeiro Sábado</b><small>medalha</small></div></div><div class="bar"><div id="cateBar"></div></div><button id="continueCatechism">Continuar leitura deste sábado</button></div>
+<div class="card"><h2>🔎 Buscar no Catecismo</h2><input id="cateSearch" class="search" placeholder="Buscar: Credo, pecado, sacramentos..."><div id="cateSearchResults"></div></div>
+<div class="card"><h2>📖 Leitor do Catecismo Anual</h2><div id="cateReader"></div></div>
+<div class="card"><h2>⭐ Favoritos</h2><div id="cateFavorites"></div></div>
+<div class="card"><h2>📅 52 Sábados do Ano</h2><div id="cateSchedule"></div></div>
+</section>
+
+<section id="academy" class="panel"><div class="card"><h2>🏛️ Academia</h2><div id="subjects" class="subject-list"></div><div id="quiz"></div></div><div class="card"><h2>📚 Conteúdos por disciplina</h2><div id="curriculum"></div></div></section>
+
+<section id="ai" class="panel"><div class="card"><h2>🤖 Automação com IA</h2><button id="runAI">Atualizar relatório</button><button id="copyAIPrompt" class="ghost">Copiar relatório</button><textarea id="aiPrompt" readonly></textarea></div><div class="card"><h2>Plano automático</h2><div id="tomorrowPlan"></div></div></section>
+
+<section id="achievements" class="panel"><div class="card"><h2>🏅 Conquistas</h2><div id="achievementList"></div></div><div class="card"><h2>🗺️ Mapa da Jornada</h2><div id="campaignMap"></div></div></section>
+
+<section id="journey" class="panel"><div class="card journey-card"><h2>🦅 Minha Jornada</h2><div id="journeyContent"></div><div class="journey-controls"><button id="journeyPrev" class="secondary">◀ Voltar</button><button id="journeyNext">Próximo ▶</button></div><button id="restartJourney" class="ghost">Rever do começo</button></div></section>
+
+<section id="parent" class="panel"><div class="card"><h2>👨 Painel do Responsável</h2><div class="grid"><div><b id="weekMoney">R$ 0</b><small>semana</small></div><div><b id="tasksDone">0/0</b><small>tarefas hoje</small></div><div><b id="critical">Matemática</b><small>prioridade</small></div><div><b id="xp">0 XP</b><small>experiência</small></div></div><button id="approve">Aprovar missão e liberar R$ 10</button><p id="approval"></p></div><div class="card"><h2>✝️ Formação Cristã</h2><div id="parentCatechism"></div></div><div class="card"><h2>Boletim</h2><div id="grades"></div></div><div class="card"><button id="export">Exportar progresso</button><button id="logout">Bloquear app</button></div></section>
+</main>
+
+<nav class="bottom"><button data-tab="today">Missão</button><button data-tab="annual">Ano</button><button data-tab="catechism">Catec.</button><button data-tab="academy">Acad.</button><button data-tab="achievements">Conq.</button><button data-tab="parent">Pai</button></nav>
+</div><script src="app.js"></script></body></html>
