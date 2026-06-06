@@ -1,0 +1,133 @@
+# 🦅 Projeto Águia — Versão 22
+
+## Sobre o Projeto
+
+O Projeto Águia é uma plataforma de formação acadêmica, intelectual e espiritual, desenvolvida para unir os princípios do **Trivium**, **Quadrivium** e do **Catecismo Menor de São Pio X** em uma jornada pedagógica contínua.
+
+Seu objetivo é formar hábitos de estudo, disciplina, responsabilidade e vida cristã.
+
+---
+
+# ✨ Novidades da Versão 22
+
+## ✝️ Catecismo Anual (Padrão Oficial)
+
+A partir desta versão, a aba **Catecismo Anual** passa a ser considerada um módulo estável do projeto.
+
+### Mantido exatamente no padrão da Versão 19:
+
+* Barra de progresso.
+* XP do Catecismo.
+* Medalhas.
+* Botão "Continuar leitura deste sábado".
+* Pesquisa interna.
+* Leitor Pedagógico.
+* Sistema dos 52 sábados do ano.
+* Textos completos convertidos do PDF para HTML.
+* Favoritos.
+* Progresso salvo automaticamente.
+
+---
+
+## 🏛 Academia Inteligente Restaurada
+
+Retorno da interface clássica da Versão 18:
+
+* Botões grandes para cada disciplina.
+* Perguntas diferentes a cada acesso.
+* Histórico inteligente para evitar repetição.
+* Reinicialização automática quando todas as perguntas forem respondidas.
+* Priorização automática das disciplinas com menor desempenho.
+
+---
+
+## 📄 Boletim Inteligente
+
+* Importação de boletins.
+* Preparação para OCR automático.
+* Tabela de notas por bimestre.
+* Sincronização direta com a área do Responsável.
+
+---
+
+## 🤖 IA Híbrida
+
+Sistema preparado para funcionamento:
+
+* Offline (base local de conhecimento).
+* Online (integração futura com IA externa).
+
+A IA utiliza:
+
+* desempenho acadêmico;
+* progresso do catecismo;
+* histórico de perguntas;
+* notas do boletim.
+
+---
+
+## 👨 Painel do Responsável
+
+* Visualização das notas.
+* Estatísticas da Academia.
+* Progresso do Catecismo.
+* XP acumulado.
+* Prioridade atual de estudos.
+
+---
+
+## 🦅 Minha Jornada
+
+Permanece como tela inicial do aplicativo, explicando de forma simples e pedagógica o funcionamento do sistema para crianças e adolescentes.
+
+---
+
+# 💾 Persistência de Dados
+
+Todo o progresso é salvo localmente no navegador.
+
+O aluno pode fechar e abrir o aplicativo sem perder:
+
+* perguntas respondidas;
+* progresso do catecismo;
+* XP;
+* medalhas;
+* notas;
+* conquistas;
+* histórico da Academia.
+
+---
+
+# 🔐 Senha padrão
+
+```
+aguia2026
+```
+
+---
+
+# 🌐 Publicação
+
+Depois de enviar os arquivos para a pasta:
+
+```
+v22/
+```
+
+o aplicativo ficará disponível em:
+
+```
+https://marciohenning.github.io/projeto-aguia/v22/
+```
+
+---
+
+# 📌 Filosofia do Projeto
+
+> *Cognoscere, amare et servire Deum.*
+
+**Conhecer, amar e servir a Deus.**
+
+---
+
+Projeto Águia © 2026
