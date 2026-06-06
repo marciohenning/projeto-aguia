@@ -1,0 +1,235 @@
+# 🦅 Projeto Águia — Versão 13
+
+## Lema
+
+> **Cognoscere, amare et servire Deum.**
+>
+> *Conhecer, amar e servir a Deus.*
+
+---
+
+# 📖 Sobre o Projeto
+
+O Projeto Águia é um aplicativo educacional e formativo criado para acompanhar o desenvolvimento acadêmico, intelectual, financeiro e espiritual de João Miguel.
+
+O sistema une:
+
+- Currículo do 9º Ano do Ensino Fundamental;
+- Organização diária e calendário anual;
+- Trivium e Quadrivium;
+- Inglês e Latim;
+- Educação Financeira;
+- Sistema de recompensas;
+- Exercícios interativos;
+- Planejamento assistido por IA;
+- Catecismo Menor de São Pio X.
+
+---
+
+# 🚀 Novidades da Versão 13
+
+## ✝️ Catecismo Completo
+
+A principal evolução desta versão é a criação de um leitor completo do Catecismo.
+
+Cada sábado do ano possui uma lição própria.
+
+Estrutura utilizada:
+
+```
+catecismo/
+   semana01.html
+   semana02.html
+   semana03.html
+   ...
+   semana52.html
+```
+
+Ao clicar em **Abrir Lição**, o aplicativo carrega automaticamente o conteúdo completo correspondente àquele sábado.
+
+---
+
+## 📅 Calendário Anual Integrado
+
+O calendário anual continua sendo o centro da organização dos estudos.
+
+Cada sábado possui ligação direta com a leitura do Catecismo.
+
+O aluno pode navegar pelas semanas e acompanhar sua evolução.
+
+---
+
+## ⭐ Sistema de Favoritos
+
+As lições mais importantes podem ser salvas para revisão posterior.
+
+---
+
+## 📈 Progresso do Catecismo
+
+A aplicação registra:
+
+- sábados concluídos;
+- percentual anual;
+- XP acumulado;
+- medalhas conquistadas.
+
+---
+
+## 🤖 Planejador Águia IA
+
+A IA acompanha automaticamente:
+
+- notas escolares;
+- progresso do Catecismo;
+- disciplinas prioritárias;
+- tarefas concluídas;
+- XP acumulado.
+
+Também gera um relatório que pode ser utilizado em assistentes de IA externos para criar novos exercícios.
+
+---
+
+# 🏛 Estrutura Pedagógica
+
+## Trivium
+
+### Gramática
+
+- Português
+- Inglês
+- Latim
+- Catecismo
+
+### Dialética
+
+- Matemática
+- Ciências
+- Educação Financeira
+
+### Retórica
+
+- Produção textual
+- Projeto interdisciplinar
+- Apresentação oral
+
+---
+
+## Quadrivium
+
+- Aritmética
+- Geometria
+- Música
+- Astronomia
+
+---
+
+# 💰 Sistema de Recompensas
+
+Ao concluir todas as tarefas do dia e receber aprovação do responsável:
+
+## Recompensa diária
+
+**R$ 10,00**
+
+Distribuição:
+
+| Destino | Valor |
+|----------|---------|
+| Uso pessoal | R$ 7,00 |
+| Poupança | R$ 2,00 |
+| Caridade | R$ 1,00 |
+
+---
+
+# ✝️ Formação Cristã
+
+## Todos os sábados
+
+- Leitura do Catecismo;
+- Perguntas e respostas;
+- Reflexão;
+- Oração;
+- Registro de progresso.
+
+## Todos os domingos
+
+- Revisão da leitura;
+- Missa;
+- Conversa em família;
+- Planejamento espiritual da semana.
+
+---
+
+# 🏅 Medalhas
+
+- 🥉 Primeira Missão
+- ✝️ Primeiro Sábado
+- 📖 Pequeno Catequista
+- 🏛 Discípulo de São Pio X
+- 🦅 Guardião da Doutrina
+- 👑 Águia da Fé
+
+---
+
+# 📱 Funcionalidades
+
+- 🦅 Missão do Dia
+- 📆 Calendário Anual
+- 📋 Planejamento Semanal
+- 🏛 Academia
+- 🧠 Exercícios Interativos
+- ✝️ Catecismo Completo
+- ⭐ Favoritos
+- 🔎 Busca por tema
+- 🤖 Planejador IA
+- 💰 Educação Financeira
+- 🇺🇸 Inglês
+- 🏛 Latim
+- 👨 Painel do Responsável
+
+---
+
+# 🔐 Senha padrão
+
+```
+aguia2026
+```
+
+---
+
+# 🌐 Publicação
+
+```
+https://marciohenning.github.io/projeto-aguia/v13/
+```
+
+---
+
+# 📜 Histórico das versões
+
+| Versão | Evolução |
+|---------|-------------------------------|
+| V1 | Estrutura inicial |
+| V2 | Organização semanal |
+| V3 | Dashboard |
+| V4 | Exercícios |
+| V5 | Tutor Escolar |
+| V6 | Sistema de recompensas |
+| V7 | Trivium e Quadrivium |
+| V8 | Calendário Anual |
+| V9 | Minha Jornada |
+| V10 | Integração com IA |
+| V11 | Catecismo anual |
+| V12 | Busca, favoritos e progresso |
+| **V13** | **Leitor completo do Catecismo com 52 lições individuais** |
+
+---
+
+# 🦅 Objetivo
+
+O Projeto Águia busca formar um jovem disciplinado, virtuoso e preparado para unir excelência acadêmica, responsabilidade financeira e formação cristã.
+
+> **Cognoscere, amare et servire Deum.**
+
+**Disciplina • Conhecimento • Virtude • Serviço**
