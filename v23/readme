@@ -1,0 +1,153 @@
+# 🦅 Projeto Águia — Versão 23 (Release Estável)
+
+## Visão Geral
+
+O **Projeto Águia** é um aplicativo educacional e formativo desenvolvido para integrar os estudos acadêmicos, a formação cristã e o desenvolvimento da disciplina pessoal.
+
+Inspirado nos princípios do **Trivium**, do **Quadrivium** e do **Catecismo Menor de São Pio X**, o aplicativo organiza a rotina diária de estudos de forma pedagógica, acompanhando a evolução do aluno e auxiliando o responsável no acompanhamento do progresso.
+
+---
+
+## ✨ Principais Recursos
+
+### 🦅 Minha Jornada
+
+* Tela inicial do aplicativo.
+* Introdução simples para crianças e adolescentes.
+* Explicação do funcionamento do sistema.
+
+### 🎯 Missão do Dia
+
+* Organização das atividades diárias.
+* Controle de conclusão.
+* Sistema de recompensa pedagógica.
+
+### 📅 Calendário Anual
+
+* Distribuição dos estudos ao longo do ano.
+* Organização baseada no Trivium e Quadrivium.
+* Integração com o Catecismo Anual.
+
+### ✝️ Catecismo Anual
+
+**Módulo oficial estabilizado nesta versão.**
+
+* 52 lições anuais.
+* Uma leitura para cada sábado.
+* Conversão do PDF para HTML.
+* Pesquisa interna.
+* Favoritos.
+* Barra de progresso.
+* Sistema de XP.
+* Medalhas.
+* Salvamento automático.
+
+### 🏛️ Academia Inteligente
+
+* Interface restaurada da Versão 18.
+* Perguntas diferentes a cada acesso.
+* Histórico para evitar repetição.
+* Priorização automática das disciplinas com menor desempenho.
+
+Disciplinas disponíveis:
+
+* Português
+* Matemática
+* Ciências
+* História
+* Geografia
+* Inglês
+* Arte
+* Projeto
+* Latim
+* Catecismo
+* Educação Financeira
+
+### 🤖 IA Híbrida
+
+* Base de conhecimento offline.
+* Preparação para integração com IA online.
+* Geração automática de planos de estudo.
+
+### 📄 Boletim OCR
+
+* Importação de PDF.
+* Importação de imagens (PNG, JPG e JPEG).
+* OCR para leitura automática.
+* Preenchimento da tabela de notas.
+* Sincronização com o Painel do Responsável.
+
+### 🏅 Conquistas
+
+* Medalhas.
+* XP.
+* Evolução da jornada.
+* Marcos acadêmicos e religiosos.
+
+### 👨 Painel do Responsável
+
+* Visualização das notas.
+* Estatísticas da Academia.
+* Progresso do Catecismo.
+* Controle das missões.
+* Acompanhamento do desenvolvimento do aluno.
+
+---
+
+## 💾 Armazenamento
+
+Todos os dados são salvos localmente no navegador:
+
+* progresso das missões;
+* perguntas respondidas;
+* evolução da Academia;
+* progresso do Catecismo;
+* notas do boletim;
+* XP e conquistas.
+
+---
+
+## 🔐 Senha padrão
+
+```text
+aguia2026
+```
+
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+v23/
+│
+├── index.html
+├── app.js
+├── styles.css
+├── manifest.json
+├── service-worker.js
+└── README.md
+```
+
+---
+
+## 🌐 GitHub Pages
+
+Após publicar a pasta **v23**, o aplicativo poderá ser acessado em:
+
+```text
+https://marciohenning.github.io/projeto-aguia/v23/
+```
+
+---
+
+## 📜 Lema
+
+> **Cognoscere, amare et servire Deum.**
+
+**Conhecer, amar e servir a Deus.**
+
+---
+
+**Projeto Águia — Versão 23 (Release Estável)**
+
+© 2026
