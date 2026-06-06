@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projeto Águia V7</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="lock" class="lock">
+  <div class="box">
+    <div class="logo">🦅</div>
+    <h1>Projeto Águia V7</h1>
+    <p class="latin">Cognoscere, amare et servire Deum.</p>
+    <input id="pass" type="password" placeholder="Senha familiar">
+    <button id="enter">Entrar</button>
+    <small>Senha: aguia2026</small>
+  </div>
+</div>
+
+<div id="app" class="hidden">
+<header>
+  <h1>🦅 Projeto Águia V7</h1>
+  <p class="latin">Cognoscere, amare et servire Deum.</p>
+  <p>João Miguel • 9º Ano • Trivium • Quadrivium • Currículo GDF • Catecismo</p>
+</header>
+
+<main>
+<section class="card hero">
+  <div>
+    <h2>Missão do Dia</h2>
+    <p id="missionText">Complete tudo para liberar R$ 10.</p>
+    <div class="bar"><div id="dayBar"></div></div>
+    <small id="dayPct">0%</small>
+  </div>
+  <div class="money"><span id="todayMoney">R$ 0</span><small>hoje</small></div>
+</section>
+
+<section class="card">
+  <h2>🧠 Tutor Águia Clássico</h2>
+  <p id="tutorText"></p>
+</section>
+
+<nav class="tabs">
+  <button data-tab="today" class="active">Missão</button>
+  <button data-tab="calendar">Calendário</button>
+  <button data-tab="week">Semana</button>
+  <button data-tab="academy">Academia</button>
+  <button data-tab="catechism">Catecismo</button>
+  <button data-tab="parent">Responsável</button>
+</nav>
+
+<section id="today" class="panel active">
+  <div class="card">
+    <h2 id="todayTitle"></h2>
+    <div id="tasks"></div>
+    <button id="goParent">Pedir aprovação</button>
+  </div>
+  <div class="card">
+    <h2>Desafio do Dia</h2>
+    <div id="challenge"></div>
+  </div>
+</section>
+
+<section id="calendar" class="panel">
+  <div class="card">
+    <h2>📅 Calendário Mensal</h2>
+    <p class="muted">🟢 aprovado • 🔴 pendente • ✝️ catecismo • 🏆 boss/síntese</p>
+    <div id="month"></div>
+    <div id="dayDetails"></div>
+  </div>
+</section>
+
+<section id="week" class="panel">
+  <div class="card">
+    <h2>📋 Visão Geral da Semana</h2>
+    <div id="weekView"></div>
+  </div>
+</section>
+
+<section id="academy" class="panel">
+  <div class="card">
+    <h2>🏛️ Trivium e Quadrivium</h2>
+    <div class="grid">
+      <div><b>Gramática</b><small>Português, Inglês, Latim, Catecismo</small></div>
+      <div><b>Dialética</b><small>Matemática, Ciências, Finanças</small></div>
+      <div><b>Retórica</b><small>Projeto, redação, fala</small></div>
+      <div><b>Quadrivium</b><small>Aritmética, Geometria, Música, Astronomia</small></div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>📚 Conteúdos para 3º e 4º bimestres</h2>
+    <div id="curriculum"></div>
+  </div>
+  <div class="card">
+    <h2>Exercícios</h2>
+    <div id="subjects"></div>
+    <div id="quiz"></div>
+  </div>
+</section>
+
+<section id="catechism" class="panel">
+  <div class="card">
+    <h2>✝️ Catecismo aos sábados e domingos</h2>
+    <div id="catePlan"></div>
+  </div>
+</section>
+
+<section id="parent" class="panel">
+  <div class="card">
+    <h2>👨 Painel do Responsável</h2>
+    <div class="grid">
+      <div><b id="weekMoney">R$ 0</b><small>semana</small></div>
+      <div><b id="tasksDone">0/0</b><small>tarefas hoje</small></div>
+      <div><b id="critical">Matemática</b><small>prioridade</small></div>
+      <div><b id="xp">0 XP</b><small>experiência</small></div>
+    </div>
+    <button id="approve">Aprovar missão e liberar R$ 10</button>
+    <p id="approval"></p>
+  </div>
+  <div class="card">
+    <h2>Boletim de João Miguel</h2>
+    <div id="grades"></div>
+  </div>
+  <div class="card">
+    <button id="export">Exportar progresso</button>
+    <button id="logout">Bloquear app</button>
+  </div>
+</section>
+</main>
+
+<nav class="bottom">
+  <button data-tab="today">Missão</button>
+  <button data-tab="calendar">Calend.</button>
+  <button data-tab="week">Semana</button>
+  <button data-tab="academy">Acad.</button>
+  <button data-tab="catechism">Catec.</button>
+  <button data-tab="parent">Pai</button>
+</nav>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

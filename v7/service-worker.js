@@ -1,0 +1,1 @@
+const CACHE='aguia-v7';const FILES=['./','./index.html','./styles.css','./app.js','./manifest.json'];self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)))});self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));
