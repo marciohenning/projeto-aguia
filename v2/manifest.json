@@ -1,0 +1,10 @@
+{
+  "name": "Projeto Águia 2026",
+  "short_name": "Águia 2026",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#1d4ed8",
+  "description": "Rotina escolar gamificada para o 9º ano.",
+  "icons": []
+}
