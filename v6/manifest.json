@@ -1,0 +1,9 @@
+{
+  "name": "Projeto Águia 2026 V6",
+  "short_name": "Águia V6",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#123c8c",
+  "description": "Mentor de formação integral com missão diária de R$10, IA local, virtudes, finanças, estudos e diário."
+}
