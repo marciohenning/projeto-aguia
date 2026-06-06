@@ -6,3 +6,4 @@ Novidades:
 - Calendário mensal
 - Integração com boletim
 - Priorização das matérias
+Calendário + visão semanal
