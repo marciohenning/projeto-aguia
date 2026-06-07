@@ -73,7 +73,30 @@
 <div class="card"><h2>📊 Tabela de Notas por Bimestre</h2><div id="gradesTable"></div><button id="saveGrades">Salvar notas</button><button id="exportGrades" class="ghost">Exportar boletim JSON</button><input id="importGrades" type="file" accept=".json" class="file-input"><label for="importGrades" class="fake-button">Importar boletim JSON</label></div>
 </section>
 
-<section id="achievements" class="panel"><div class="card"><h2>🏅 Conquistas</h2><div id="achievementList"></div></div><div class="card"><h2>🗺️ Mapa da Jornada</h2><div id="campaignMap"></div></div></section>
+<section id="achievements" class="panel">
+<div class="card">
+<h2>🏅 Conquistas</h2>
+<div id="achievementList">
+<div class="achievement"><b>🥉 Primeira missão</b><br><small>Aprovar a primeira missão.</small></div>
+<div class="achievement"><b>✝️ Primeiro Sábado</b><br><small>Concluir a primeira lição do Catecismo.</small></div>
+<div class="achievement"><b>📖 Pequeno Catequista</b><br><small>Concluir 10 sábados.</small></div>
+<div class="achievement"><b>🏛 Discípulo de São Pio X</b><br><small>Concluir 25 sábados.</small></div>
+<div class="achievement"><b>🦅 Águia da Fé</b><br><small>Concluir 52 sábados.</small></div>
+</div>
+</div>
+<div class="card">
+<h2>🗺️ Mapa da Jornada</h2>
+<div id="campaignMap">
+<div class="campaign-step"><b>1. Aspirante</b><br><small>Início da jornada.</small></div>
+<div class="campaign-step"><b>2. Escudeiro</b><br><small>Avançar com disciplina.</small></div>
+<div class="campaign-step"><b>3. Estudioso</b><br><small>Crescer nos estudos.</small></div>
+<div class="campaign-step"><b>4. Discípulo</b><br><small>Perseverar na formação.</small></div>
+<div class="campaign-step"><b>5. Águia Jovem</b><br><small>Voar mais alto.</small></div>
+<div class="campaign-step"><b>6. Guardião</b><br><small>Guardar a missão.</small></div>
+<div class="campaign-step"><b>7. Águia Imperial</b><br><small>Excelência na jornada.</small></div>
+</div>
+</div>
+</section>
 
 <section id="parent" class="panel"><div class="card"><h2>👨 Painel do Responsável</h2><div class="grid"><div><b id="weekMoney">R$ 0</b><small>semana</small></div><div><b id="tasksDone">0/0</b><small>tarefas hoje</small></div><div><b id="critical">Matemática</b><small>prioridade</small></div><div><b id="xp">0 XP</b><small>experiência</small></div></div><button id="approve">Aprovar missão e liberar R$ 10</button><p id="approval"></p></div><div class="card"><h2>📊 Notas sincronizadas do Boletim</h2><div id="parentGradesTable"></div></div><div class="card"><h2>🏛️ Desempenho na Academia</h2><div id="parentAcademyStats"></div></div><div class="card"><h2>✝️ Formação Cristã</h2><div id="parentCatechism"></div></div><div class="card"><button id="export">Exportar progresso</button><button id="logout">Bloquear app</button></div></section>
 </main>

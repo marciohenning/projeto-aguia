@@ -2,7 +2,7 @@
 
 ## Correção principal
 
-A aba **Conquistas** foi reconstruída usando a estrutura real da Versão 18 enviada pelo usuário.
+A aba **Conquistas** foi restaurada de forma robusta no padrão visual da Versão 18.
 
 ## Mantido
 
@@ -14,7 +14,7 @@ A aba **Conquistas** foi reconstruída usando a estrutura real da Versão 18 env
 - Calendário com referências da V22.
 - Aba IA removida.
 
-## Conquistas restauradas
+## Conquistas
 
 - Primeira Missão
 - Primeiro Sábado
@@ -36,14 +36,6 @@ A aba **Conquistas** foi reconstruída usando a estrutura real da Versão 18 env
 
 `aguia2026`
 
-## Publicação
-
-Publique os arquivos dentro da pasta `v27/`.
-
 ## Link
 
 `https://marciohenning.github.io/projeto-aguia/v27/`
-
-## Lema
-
-**Cognoscere, amare et servire Deum.**

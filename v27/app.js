@@ -75,8 +75,42 @@ function applyDetectedGrades(found){let count=0;for(let [s,nums] of Object.entri
 function renderGradesTable(){let b=['1º bim.','2º bim.','3º bim.','4º bim.'];gradesTable.innerHTML=`<table class="grade-table"><thead><tr><th>Disciplina</th>${b.map(x=>`<th>${x}</th>`).join('')}<th>Média</th></tr></thead><tbody>`+Object.entries(state.grades).map(([sub,arr])=>`<tr><td><b>${sub}</b></td>${[0,1,2,3].map(i=>`<td><input data-grade-sub="${sub}" data-grade-i="${i}" type="number" min="0" max="10" step="0.1" value="${arr[i]||0}"></td>`).join('')}<td><b>${avg(arr).toFixed(1)}</b></td></tr>`).join('')+`</tbody></table>`;renderParentGrades();renderAcademy()}
 function renderParentGrades(){parentGradesTable.innerHTML=`<table class="grade-table"><thead><tr><th>Disciplina</th><th>1º</th><th>2º</th><th>3º</th><th>4º</th><th>Média</th></tr></thead><tbody>`+Object.entries(state.grades).map(([s,arr])=>`<tr><td><b>${s}</b></td>${arr.map(n=>`<td>${Number(n||0).toFixed(1)}</td>`).join('')}<td><b>${avg(arr).toFixed(1)}</b></td></tr>`).join('')+`</tbody></table>`}
 function renderAcademyStats(){let html=subjects.map(s=>{let v=state.academyStats[s]||{correct:0,total:0};let pct=v.total?Math.round(v.correct/v.total*100):0;return `<div class="stat-card"><b>${icons[s]||'📚'} ${s}</b><br><small>${v.correct}/${v.total} acertos • ${pct}%</small></div>`}).join('');academyStats.innerHTML=`<div class="grid">${html}</div>`;parentAcademyStats.innerHTML=`<div class="grid">${html}</div>`}
-function renderAchievements(){let missions=Object.keys(state.money).length,done=cateDoneCount(),xpVal=state.xp;let a=[['🥉 Primeira missão',missions>=1,'Aprovar a primeira missão.'],['✝️ Primeiro Sábado',done>=1,'Concluir a primeira lição do Catecismo.'],['📖 Pequeno Catequista',done>=10,'Concluir 10 sábados.'],['🏛 Discípulo de São Pio X',done>=25,'Concluir 25 sábados.'],['🦅 Águia da Fé',done>=52,'Concluir 52 sábados.']];achievementList.innerHTML=a.map(x=>`<div class="achievement ${x[1]?'done':''}"><b>${x[0]}</b><br><small>${x[2]}</small></div>`).join('');campaignMap.innerHTML=['Aspirante','Escudeiro','Estudioso','Discípulo','Águia Jovem','Guardião','Águia Imperial'].map((n,i)=>`<div class="campaign-step ${xpVal>=i*50?'done':''}"><b>${i+1}. ${n}</b><br><small>${xpVal>=i*50?'Desbloqueado':'Faltam '+Math.max(0,i*50-xpVal)+' XP'}</small></div>`).join('')}
+function renderAchievements(){
+ const achievementEl=document.getElementById('achievementList');
+ const campaignEl=document.getElementById('campaignMap');
+ if(!achievementEl || !campaignEl) return;
 
+ let missions=Object.keys(state.money||{}).length;
+ let done=cateDoneCount();
+ let xpVal=Number(state.xp||0);
+
+ let achievements=[
+  ['🥉 Primeira missão', missions>=1, 'Aprovar a primeira missão.'],
+  ['✝️ Primeiro Sábado', done>=1, 'Concluir a primeira lição do Catecismo.'],
+  ['📖 Pequeno Catequista', done>=10, 'Concluir 10 sábados.'],
+  ['🏛 Discípulo de São Pio X', done>=25, 'Concluir 25 sábados.'],
+  ['🦅 Águia da Fé', done>=52, 'Concluir 52 sábados.']
+ ];
+
+ achievementEl.innerHTML=achievements.map(x=>`
+  <div class="achievement ${x[1]?'done':''}">
+   <b>${x[0]}</b><br>
+   <small>${x[2]}</small>
+  </div>
+ `).join('');
+
+ let levels=['Aspirante','Escudeiro','Estudioso','Discípulo','Águia Jovem','Guardião','Águia Imperial'];
+ campaignEl.innerHTML=levels.map((name,i)=>{
+  let needed=i*50;
+  let unlocked=xpVal>=needed;
+  return `
+   <div class="campaign-step ${unlocked?'done':''}">
+    <b>${i+1}. ${name}</b><br>
+    <small>${unlocked?'Desbloqueado':'Faltam '+Math.max(0,needed-xpVal)+' XP'}</small>
+   </div>
+  `;
+ }).join('');
+}
 function renderJourney(){let i=state.journeyIndex||0,p=journeyPages[i];journeyContent.innerHTML=`<div class="journey-slide"><div class="journey-emoji">${p.emoji}</div><h3>${p.title}</h3><p>${p.text}</p><small>${i+1} de ${journeyPages.length}</small></div>`;journeyPrev.disabled=i===0;journeyNext.textContent=i===journeyPages.length-1?'Começar 🚀':'Próximo ▶'}
 function approve(){let s=stats();if(!s.complete){approval.textContent='A missão ainda não está completa.';return}if(state.money[today()]){approval.textContent='Missão já aprovada hoje.';return}state.money[today()]=10;state.xp+=10;state.piggy.free+=7;state.piggy.saved+=2;state.piggy.charity+=1;state.aiPlan='';save();approval.textContent='🦅 Missão aprovada. R$ 10 liberados.';renderAll()}
 function renderAll(){renderMission();renderEagleMessage();renderAnnual();renderCatechism();renderAcademy();renderGradesTable();renderAcademyStats();renderAchievements();renderJourney();weekMoney.textContent=money(weekMoneyTotal());xp.textContent=state.xp+' XP'}
@@ -86,3 +120,4 @@ document.addEventListener('input',e=>{if(e.target.id==='cateSearch')renderCateSe
 document.addEventListener('click',e=>{if(e.target.matches('[data-tab]'))switchTab(e.target.dataset.tab);if(e.target.id==='goParent')switchTab('parent');if(e.target.id==='approve')approve();if(e.target.id==='parseGrades'){let found=parseGradesFromText(ocrText.value);let count=applyDetectedGrades(found);parseResult.innerHTML=count?`Notas detectadas e aplicadas: ${count}. Revise a tabela.`:'Nenhuma nota detectada automaticamente. Revise o texto ou preencha manualmente.'}if(e.target.id==='resetQuestionHistory'){state.seenQuestions={};save();alert('Histórico reiniciado.')}if(e.target.id==='smartQuestion'){showQuestion(smartPriority());renderAcademy();}if(e.target.matches('[data-annual]'))describeDate(e.target.dataset.annual);if(e.target.matches('[data-open-date-cate]')){let key=e.target.dataset.openDateCate;let idx=saturdaysOfYear().findIndex(d=>iso(d)===key);state.catePage=idx>=0?idx:cateWeekIndex(new Date(key+'T00:00:00'));save();switchTab('catechism')}if(e.target.matches('[data-open-cate]')){state.catePage=Number(e.target.dataset.openCate);state.aiPlan='';save();switchTab('catechism')}if(e.target.matches('[data-subject]'))showQuestion(e.target.dataset.subject);if(e.target.matches('.answer')){let sub=e.target.dataset.sub,q=questionBank[sub][Number(e.target.dataset.qi)],ok=Number(e.target.dataset.i)===q[2];e.target.classList.add(ok?'correct':'wrong');state.xp+=ok?5:0;state.academyStats[sub]=state.academyStats[sub]||{correct:0,total:0};state.academyStats[sub].total++;if(ok)state.academyStats[sub].correct++;let fb=e.target.parentElement.querySelector('.feedback');fb.classList.remove('hidden');fb.textContent=ok?'✅ Correto! +5 XP':'❌ '+q[3];save();renderAcademyStats();}if(e.target.id==='continueCatechism'){state.catePage=cateWeekIndex();save();switchTab('catechism')}if(e.target.id==='prevCate'){state.catePage=Math.max(0,(state.catePage||0)-1);save();renderAll()}if(e.target.id==='nextCate'){state.catePage=Math.min(51,(state.catePage||0)+1);save();renderAll()}if(e.target.id==='favCate'){let i=state.catePage||0;state.cateFavorites=state.cateFavorites.includes(i)?state.cateFavorites.filter(x=>x!==i):[...state.cateFavorites,i];save();renderAll()}if(e.target.id==='markCate'){let i=state.catePage||0,key=iso(saturdaysOfYear()[i]);if(!state.cateDone[key]){state.cateDone[key]=true;state.cateXP+=10;state.xp+=10;save()}renderAll()}if(e.target.id==='journeyNext'){if(state.journeyIndex<journeyPages.length-1){state.journeyIndex++;save();renderJourney()}else switchTab('today')}if(e.target.id==='journeyPrev'){if(state.journeyIndex>0){state.journeyIndex--;save();renderJourney()}}if(e.target.id==='restartJourney'){state.journeyIndex=0;save();renderJourney()}if(e.target.id==='saveGrades'){save();alert('Notas salvas e sincronizadas com o responsável.')}if(e.target.id==='exportGrades'){let blob=new Blob([JSON.stringify(state.grades,null,2)],{type:'application/json'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='boletim-projeto-aguia.json';a.click()}if(e.target.id==='export'){let blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='projeto-aguia-v23-progresso.json';a.click()}if(e.target.id==='logout'){localStorage.removeItem('unlockedV23');location.reload()}});
 if('serviceWorker' in navigator)navigator.serviceWorker.register('service-worker.js');
 renderAll();
+setTimeout(renderAchievements,100);
