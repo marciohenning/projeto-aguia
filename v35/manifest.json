@@ -1,0 +1,11 @@
+{
+  "name": "Projeto Águia V35",
+  "short_name": "Águia V35",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#0f2f70",
+  "background_color": "#f4f7fb",
+  "orientation": "portrait-primary",
+  "scope": "./",
+  "description": "Projeto Águia com IndexedDB, backup e restauração."
+}
