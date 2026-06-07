@@ -1,0 +1,208 @@
+# 🦅 Projeto Águia — Versão 34
+
+## Visão Geral
+
+O **Projeto Águia** é uma plataforma de formação acadêmica, intelectual e espiritual desenvolvida para integrar estudos, disciplina, virtudes e crescimento na fé em uma única jornada.
+
+Inspirado no **Trivium**, no **Quadrivium** e no **Catecismo Menor de São Pio X**, o aplicativo auxilia o aluno em seu desenvolvimento diário e permite ao responsável acompanhar toda a sua evolução.
+
+A **Versão 34** representa uma importante melhoria na integração dos sistemas internos do aplicativo, fazendo com que a aprovação das missões influencie corretamente o progresso geral do aluno.
+
+---
+
+# ✨ Novidades da Versão 34
+
+## 🎯 Normalização do Sistema de Missões
+
+A aprovação da Missão do Dia pelo responsável agora está totalmente integrada ao sistema de evolução.
+
+Ao aprovar uma missão, o aplicativo atualiza automaticamente:
+
+* XP do aluno;
+* progresso das conquistas;
+* evolução do Mapa da Jornada;
+* indicadores gerais do sistema.
+
+---
+
+## 🏅 Sistema de Conquistas Aprimorado
+
+A aba Conquistas agora apresenta informações sincronizadas com o progresso real do aluno.
+
+### Recursos
+
+* barras individuais de progresso;
+* percentual geral de evolução;
+* conquistas desbloqueadas;
+* conquistas pendentes;
+* atualização automática após cada missão aprovada.
+
+### Medalhas disponíveis
+
+* 🥉 Primeira Missão
+* 🎯 Missionário da Semana
+* ✝️ Primeiro Sábado
+* 📖 Pequeno Catequista
+* 🏛 Discípulo de São Pio X
+* 🦅 Águia da Fé
+
+---
+
+## 🗺️ Mapa da Jornada Inteligente
+
+O sistema identifica automaticamente o estágio atual do aluno.
+
+### Níveis
+
+1. Aspirante
+2. Escudeiro
+3. Estudioso
+4. Discípulo
+5. Águia Jovem
+6. Guardião
+7. Águia Imperial
+
+O painel informa:
+
+* nível atual;
+* XP acumulado;
+* próximo objetivo;
+* XP restante para avançar.
+
+Cada avanço é calculado automaticamente conforme as missões aprovadas.
+
+---
+
+## 📊 Painel Geral de Evolução
+
+A aba Conquistas agora resume:
+
+* missões aprovadas;
+* tarefas concluídas;
+* sábados do Catecismo concluídos;
+* XP acumulado;
+* percentual geral das conquistas.
+
+---
+
+## 🏛️ Academia Inteligente
+
+Mantém todos os recursos das versões anteriores:
+
+* Prioridade Inteligente;
+* escolha livre das disciplinas;
+* recomendação automática da Águia;
+* histórico de perguntas respondidas.
+
+---
+
+## ✝️ Catecismo Anual
+
+O módulo Catecismo permanece preservado:
+
+* 52 lições anuais;
+* textos convertidos do PDF para HTML;
+* pesquisa interna;
+* barra de progresso;
+* XP e medalhas;
+* salvamento automático.
+
+---
+
+## 📄 Boletim OCR
+
+Recursos mantidos:
+
+* importação de PDF;
+* importação de PNG, JPG e JPEG;
+* leitura automática por OCR;
+* atualização das notas;
+* sincronização com a Área do Responsável.
+
+---
+
+## 📱 Navegação PWA
+
+Permanecem disponíveis:
+
+* tela inicial simplificada;
+* atalhos rápidos;
+* navegação otimizada para dispositivos móveis;
+* funcionamento offline;
+* compatibilidade com Android e iPhone.
+
+---
+
+## 🚀 Alterações da Versão 34
+
+* ✅ Missão do Dia sincronizada com o XP;
+* ✅ XP sincronizado com o Mapa da Jornada;
+* ✅ Conquistas atualizadas automaticamente;
+* ✅ Barra geral de evolução;
+* ✅ Painel de progresso consolidado;
+* ✅ Correções de atualização dinâmica;
+* ✅ Academia preservada;
+* ✅ Catecismo preservado;
+* ✅ Boletim OCR preservado.
+
+---
+
+## 🔮 Próxima Evolução Planejada
+
+**Versão 35**
+
+Implementação de:
+
+* Banco de Dados Interno (IndexedDB);
+* Sistema de Backup e Restauração;
+* Exportação e Importação do progresso do aluno;
+* Preparação para futura migração para React Native.
+
+---
+
+## 🔐 Senha padrão
+
+```text
+aguia2026
+```
+
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+v34/
+│
+├── index.html
+├── app.js
+├── styles.css
+├── manifest.json
+├── service-worker.js
+└── README.md
+```
+
+---
+
+## 🌐 Publicação
+
+Após enviar os arquivos para a pasta **v34**, o aplicativo estará disponível em:
+
+```text
+https://marciohenning.github.io/projeto-aguia/v34/
+```
+
+---
+
+## 📜 Lema do Projeto
+
+> **Cognoscere, amare et servire Deum.**
+
+**Conhecer, amar e servir a Deus.**
+
+---
+
+**Projeto Águia — Versão 34**
+
+**Release de Normalização do Sistema de Missões, Conquistas e Jornada**
+
+© 2026
