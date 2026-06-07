@@ -1,0 +1,235 @@
+# 🦅 Projeto Águia — Versão 35
+
+## Visão Geral
+
+O **Projeto Águia** é uma plataforma de formação acadêmica, intelectual e espiritual desenvolvida para unir estudos, disciplina, organização e crescimento na fé em uma única jornada.
+
+Inspirado nos princípios do **Trivium**, do **Quadrivium** e do **Catecismo Menor de São Pio X**, o aplicativo acompanha a evolução do aluno por meio de missões, Academia, Catecismo Anual, Boletim Escolar e Sistema de Conquistas.
+
+A **Versão 35** representa um importante avanço estrutural do projeto, introduzindo um sistema de armazenamento mais robusto e seguro.
+
+---
+
+# ✨ Novidades da Versão 35
+
+## 💾 Banco de Dados Interno (IndexedDB)
+
+O Projeto Águia passa a contar com um banco de dados interno utilizando a tecnologia **IndexedDB**, proporcionando maior confiabilidade no armazenamento das informações do aluno.
+
+O banco interno preserva:
+
+* progresso das missões;
+* XP acumulado;
+* Academia;
+* Catecismo Anual;
+* Conquistas;
+* Mapa da Jornada;
+* Boletim OCR;
+* configurações do aplicativo.
+
+---
+
+## 🗄 Estrutura do Banco
+
+```text
+ProjetoAguiaDB
+│
+├── state
+├── backups
+└── logs
+```
+
+Essa estrutura prepara o sistema para futuras expansões e para a migração para uma versão nativa.
+
+---
+
+## 📤 Sistema de Backup
+
+Foi criada uma nova área dedicada ao gerenciamento dos dados do aluno.
+
+### Recursos disponíveis
+
+* Exportar Backup em JSON;
+* Importar Backup;
+* Restaurar último Backup salvo;
+* Migrar dados das versões anteriores;
+* Limpar banco interno.
+
+O arquivo gerado possui formato semelhante a:
+
+```text
+Projeto_Aguia_Backup_V35_2026-06-06.json
+```
+
+---
+
+## 📥 Restauração de Dados
+
+O sistema permite recuperar integralmente o progresso do aluno em caso de:
+
+* troca de computador;
+* troca de celular;
+* reinstalação do navegador;
+* migração futura para React Native.
+
+Todo o histórico poderá ser restaurado a partir do arquivo de backup.
+
+---
+
+## 🔄 Migração Automática
+
+Ao abrir a Versão 35 pela primeira vez, os dados das versões anteriores são migrados automaticamente para o novo banco interno.
+
+O sistema mantém compatibilidade com o armazenamento anterior para garantir uma transição segura.
+
+---
+
+## 🏅 Sistema de Conquistas
+
+Permanece integrado com:
+
+* aprovação das missões;
+* XP;
+* Mapa da Jornada;
+* progresso do Catecismo.
+
+O avanço do aluno continua sendo atualizado automaticamente.
+
+---
+
+## 🗺️ Mapa da Jornada
+
+O aluno acompanha sua evolução através dos níveis:
+
+1. Aspirante
+2. Escudeiro
+3. Estudioso
+4. Discípulo
+5. Águia Jovem
+6. Guardião
+7. Águia Imperial
+
+Cada missão aprovada contribui para o crescimento na jornada.
+
+---
+
+## 🏛 Academia Inteligente
+
+Mantidos todos os recursos já existentes:
+
+* Prioridade Inteligente;
+* Escolha Livre de disciplinas;
+* Recomendação automática de estudos;
+* Histórico de desempenho.
+
+---
+
+## ✝️ Catecismo Anual
+
+O módulo Catecismo permanece preservado:
+
+* 52 lições anuais;
+* textos em HTML;
+* pesquisa interna;
+* barra de progresso;
+* XP e medalhas;
+* salvamento automático.
+
+---
+
+## 📄 Boletim OCR
+
+Recursos disponíveis:
+
+* importação de PDF;
+* importação de PNG, JPG e JPEG;
+* leitura automática por OCR;
+* atualização das notas;
+* sincronização com a Área do Responsável.
+
+---
+
+## 📱 Navegação PWA
+
+Mantidas todas as melhorias das versões anteriores:
+
+* interface otimizada para celulares;
+* funcionamento offline;
+* compatibilidade com Android e iPhone;
+* experiência semelhante à de um aplicativo instalado.
+
+---
+
+## 🚀 Alterações da Versão 35
+
+* ✅ Implementação do Banco de Dados Interno (IndexedDB);
+* ✅ Sistema de Backup e Restauração;
+* ✅ Exportação em JSON;
+* ✅ Importação de Backup;
+* ✅ Migração automática dos dados antigos;
+* ✅ Compatibilidade com versões anteriores;
+* ✅ Preparação para futura migração para React Native;
+* ✅ Sistema de Conquistas preservado;
+* ✅ Mapa da Jornada preservado;
+* ✅ Academia Inteligente preservada;
+* ✅ Catecismo Anual preservado.
+
+---
+
+## 🔮 Próxima Evolução Planejada
+
+**Versão 36**
+
+* sincronização entre dispositivos;
+* múltiplos perfis de aluno;
+* backup em nuvem;
+* integração facilitada com a futura versão React Native.
+
+---
+
+## 🔐 Senha padrão
+
+```text
+aguia2026
+```
+
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+v35/
+│
+├── index.html
+├── app.js
+├── styles.css
+├── manifest.json
+├── service-worker.js
+└── README.md
+```
+
+---
+
+## 🌐 Publicação
+
+Após enviar os arquivos para a pasta **v35**, o aplicativo estará disponível em:
+
+```text
+https://marciohenning.github.io/projeto-aguia/v35/
+```
+
+---
+
+## 📜 Lema do Projeto
+
+> **Cognoscere, amare et servire Deum.**
+
+**Conhecer, amar e servir a Deus.**
+
+---
+
+**Projeto Águia — Versão 35**
+
+**Release do Banco de Dados Interno e Sistema de Backup**
+
+© 2026
