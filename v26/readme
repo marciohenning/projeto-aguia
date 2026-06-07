@@ -1,0 +1,201 @@
+# 🦅 Projeto Águia — Versão 26
+
+## Visão Geral
+
+O **Projeto Águia** é uma plataforma de formação acadêmica, intelectual e espiritual, criada para unir os princípios do **Trivium**, do **Quadrivium** e do **Catecismo Menor de São Pio X** em uma jornada organizada de estudos.
+
+A Versão 26 representa uma etapa importante de refinamento do projeto, preservando as funcionalidades mais bem avaliadas das versões anteriores e restaurando a experiência visual clássica da aba Conquistas.
+
+---
+
+# ✨ Novidades da Versão 26
+
+## 🏛️ Academia Inteligente com Liberdade de Escolha
+
+A Academia mantém toda a lógica inteligente da Versão 24.
+
+A Águia continua analisando:
+
+* desempenho nas atividades;
+* notas do boletim;
+* matérias com menor rendimento;
+* tempo sem revisar determinada disciplina.
+
+Com base nesses dados, o sistema apresenta uma sugestão automática de estudos.
+
+Exemplo:
+
+> **Prioridade Inteligente:** 🧮 Matemática
+
+Entretanto, o aluno possui liberdade para alterar a disciplina a qualquer momento.
+
+### Disciplinas disponíveis
+
+* 📝 Português
+* 🧮 Matemática
+* 🔬 Ciências
+* 🏛 História
+* 🌎 Geografia
+* 🇺🇸 Inglês
+* 🏛 Latim
+* ✝️ Catecismo
+* 🎨 Arte
+* 💰 Educação Financeira
+* 💡 Projeto
+
+Também permanece disponível o botão:
+
+**🦅 Escolher para Mim**
+
+que utiliza a inteligência do aplicativo para selecionar automaticamente a próxima disciplina recomendada.
+
+---
+
+## 🏅 Conquistas Restauradas (Modelo V18)
+
+A aba Conquistas retorna ao seu formato clássico, preservando a identidade visual das primeiras versões do Projeto Águia.
+
+### Medalhas
+
+* 🥉 Primeira Missão
+* ✝️ Primeiro Sábado
+* 📖 Pequeno Catequista
+* 🏛 Discípulo de São Pio X
+* 🦅 Águia da Fé
+
+### 🗺️ Mapa da Jornada
+
+* Aspirante
+* Escudeiro
+* Estudioso
+* Discípulo
+* Águia Jovem
+* Guardião
+* Águia Imperial
+
+O progresso continua sendo controlado através do sistema de XP.
+
+---
+
+## 📅 Calendário Anual
+
+Foram mantidas todas as referências introduzidas na Versão 22:
+
+* disciplinas do dia;
+* conteúdos previstos;
+* exercícios recomendados;
+* reforço baseado no boletim;
+* lição do Catecismo aos sábados.
+
+---
+
+## ✝️ Catecismo Anual
+
+Mantido exatamente no padrão consolidado das versões anteriores.
+
+### Recursos disponíveis
+
+* 52 lições anuais;
+* conversão do PDF para HTML;
+* leitor pedagógico;
+* pesquisa interna;
+* favoritos;
+* barra de progresso;
+* sistema de XP;
+* medalhas;
+* salvamento automático.
+
+---
+
+## 📄 Boletim OCR
+
+* Importação de PDF;
+* Importação de PNG, JPG e JPEG;
+* OCR para leitura automática;
+* Atualização da tabela de notas;
+* Sincronização com o Painel do Responsável.
+
+---
+
+## 👨 Painel do Responsável
+
+Permite acompanhar:
+
+* notas escolares;
+* desempenho acadêmico;
+* progresso no Catecismo;
+* evolução das missões;
+* XP acumulado;
+* conquistas obtidas.
+
+---
+
+## 🚫 Simplificação da Interface
+
+Nesta versão, a aba de Inteligência Artificial foi removida do menu principal, tornando a navegação mais simples e intuitiva para crianças e adolescentes.
+
+---
+
+## 💾 Armazenamento Local
+
+O aplicativo salva automaticamente:
+
+* progresso das missões;
+* perguntas respondidas;
+* evolução da Academia;
+* progresso do Catecismo;
+* boletim escolar;
+* XP;
+* medalhas;
+* conquistas.
+
+Os dados permanecem armazenados localmente no navegador.
+
+---
+
+## 🔐 Senha padrão
+
+```text
+aguia2026
+```
+
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+v26/
+│
+├── index.html
+├── app.js
+├── styles.css
+├── manifest.json
+├── service-worker.js
+└── README.md
+```
+
+---
+
+## 🌐 Publicação
+
+Após enviar os arquivos para a pasta **v26**, o aplicativo estará disponível em:
+
+```text
+https://marciohenning.github.io/projeto-aguia/v26/
+```
+
+---
+
+## 📜 Lema
+
+> **Cognoscere, amare et servire Deum.**
+
+**Conhecer, amar e servir a Deus.**
+
+---
+
+**Projeto Águia — Versão 26**
+
+**Release de Consolidação Visual**
+
+**© 2026**
