@@ -1,0 +1,228 @@
+# 🦅 Projeto Águia — Versão 30
+
+## Visão Geral
+
+O **Projeto Águia** é uma plataforma de formação acadêmica, intelectual e espiritual que integra planejamento escolar, desenvolvimento das virtudes e formação cristã em uma única jornada.
+
+Inspirado no **Trivium**, no **Quadrivium** e no **Catecismo Menor de São Pio X**, o aplicativo auxilia o aluno e sua família no acompanhamento diário dos estudos e do crescimento pessoal.
+
+A **Versão 30** consolida a experiência mobile e realiza uma importante correção pedagógica no módulo do Catecismo Anual.
+
+---
+
+# ✨ Novidades da Versão 30
+
+## ✝️ Correção do Catecismo Anual
+
+Foi realizada a revisão da **Primeira Lição** do Catecismo Anual.
+
+### Correção do Credo
+
+O trecho da oração que aparecia fragmentado foi reorganizado conforme a redação tradicional do Catecismo Menor de São Pio X.
+
+Agora o texto apresenta corretamente a sequência:
+
+> "...foi crucificado, morto e sepultado; desceu aos infernos; ao terceiro dia ressurgiu dos mortos; subiu aos céus, está sentado à mão direita de Deus Padre todo-poderoso, donde há de vir a julgar os vivos e os mortos..."
+
+A correção mantém a fidelidade ao texto tradicional e melhora a experiência pedagógica de leitura.
+
+---
+
+## 📖 Formatação Pedagógica
+
+Mantidas as melhorias implementadas nas versões anteriores:
+
+* numeração destacada;
+* subtítulos em negrito;
+* blocos organizados para leitura;
+* adaptação para computador, tablet e celular.
+
+---
+
+## 📱 Plataforma Mobile
+
+A navegação continua totalmente adaptada para:
+
+### Sistemas Operacionais
+
+* Android
+* iPhone (iOS)
+* Tablets Android
+* iPad
+
+### Navegadores
+
+* Google Chrome
+* Safari
+* Firefox
+* Microsoft Edge
+* Brave
+
+---
+
+## 🏛️ Academia Inteligente Livre
+
+Permanece disponível:
+
+### 🦅 Prioridade Inteligente
+
+A Águia analisa automaticamente:
+
+* desempenho acadêmico;
+* notas do boletim;
+* histórico de respostas;
+* frequência de estudos.
+
+### 📚 Escolha Livre
+
+O aluno pode selecionar qualquer disciplina para estudo sem perder a recomendação automática do sistema.
+
+### 🤖 Escolher para Mim
+
+O botão continua disponível para selecionar automaticamente a disciplina prioritária.
+
+---
+
+## 🏅 Conquistas
+
+A aba Conquistas permanece utilizando o modelo clássico restaurado.
+
+### Medalhas
+
+* 🥉 Primeira Missão
+* ✝️ Primeiro Sábado
+* 📖 Pequeno Catequista
+* 🏛 Discípulo de São Pio X
+* 🦅 Águia da Fé
+
+---
+
+## 🗺️ Mapa da Jornada
+
+Progressão do aluno:
+
+1. Aspirante
+2. Escudeiro
+3. Estudioso
+4. Discípulo
+5. Águia Jovem
+6. Guardião
+7. Águia Imperial
+
+---
+
+## 📅 Calendário Anual
+
+Mantidas todas as referências pedagógicas:
+
+* disciplinas do dia;
+* conteúdos previstos;
+* exercícios recomendados;
+* reforço conforme o boletim;
+* lição do Catecismo correspondente aos sábados.
+
+---
+
+## 📄 Boletim OCR
+
+Recursos disponíveis:
+
+* importação de PDF;
+* importação de PNG, JPG e JPEG;
+* leitura automática por OCR;
+* atualização da tabela de notas;
+* sincronização com o Painel do Responsável.
+
+---
+
+## 👨 Painel do Responsável
+
+Permite acompanhar:
+
+* desempenho escolar;
+* progresso acadêmico;
+* evolução do Catecismo;
+* XP;
+* medalhas;
+* conquistas;
+* notas importadas.
+
+---
+
+## 🚀 Alterações da Versão 30
+
+* ✅ Correção do texto do Credo na Primeira Lição;
+* ✅ Ajuste da sequência tradicional do Catecismo;
+* ✅ Melhoria da formatação pedagógica;
+* ✅ Compatibilidade preservada para Android e iOS;
+* ✅ Menu mobile completo;
+* ✅ Academia Inteligente preservada;
+* ✅ Conquistas mantidas;
+* ✅ Calendário Anual preservado;
+* ✅ Boletim OCR sincronizado.
+
+---
+
+## 💾 Persistência de Dados
+
+O aplicativo salva automaticamente:
+
+* progresso da Academia;
+* Catecismo Anual;
+* perguntas respondidas;
+* boletim escolar;
+* XP;
+* medalhas;
+* conquistas;
+* histórico do aluno.
+
+As informações permanecem armazenadas localmente mesmo após o fechamento do navegador.
+
+---
+
+## 🔐 Senha padrão
+
+```text
+aguia2026
+```
+
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+v30/
+│
+├── index.html
+├── app.js
+├── styles.css
+├── manifest.json
+├── service-worker.js
+└── README.md
+```
+
+---
+
+## 🌐 Publicação
+
+Após enviar os arquivos para a pasta **v30**, o aplicativo estará disponível em:
+
+```text
+https://marciohenning.github.io/projeto-aguia/v30/
+```
+
+---
+
+## 📜 Lema do Projeto
+
+> **Cognoscere, amare et servire Deum.**
+
+**Conhecer, amar e servir a Deus.**
+
+---
+
+**Projeto Águia — Versão 30**
+
+**Release de Refinamento Pedagógico do Catecismo Anual**
+
+© 2026
