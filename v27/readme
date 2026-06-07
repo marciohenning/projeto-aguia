@@ -1,0 +1,214 @@
+# 🦅 Projeto Águia — Versão 27
+
+## Visão Geral
+
+O **Projeto Águia** é uma plataforma de formação acadêmica, intelectual e espiritual criada para acompanhar o desenvolvimento do aluno por meio de uma rotina organizada de estudos, virtudes e disciplina.
+
+Inspirado nos princípios do **Trivium**, do **Quadrivium** e do **Catecismo Menor de São Pio X**, o aplicativo integra planejamento, acompanhamento escolar, formação cristã e gamificação em uma única ferramenta.
+
+A **Versão 27** representa uma consolidação das principais evoluções do projeto, reunindo a estabilidade das versões anteriores e restaurando elementos clássicos da interface.
+
+---
+
+# ✨ Novidades da Versão 27
+
+## 🏛️ Academia Inteligente Livre
+
+A Academia continua utilizando o sistema de Prioridade Inteligente, analisando:
+
+* desempenho nas atividades;
+* notas do boletim;
+* histórico de respostas;
+* disciplinas com menor rendimento;
+* tempo sem revisão.
+
+A Águia sugere uma matéria prioritária, porém o aluno possui total liberdade para escolher qualquer disciplina.
+
+### Disciplinas disponíveis
+
+* 📝 Português
+* 🧮 Matemática
+* 🔬 Ciências
+* 🏛 História
+* 🌎 Geografia
+* 🇺🇸 Inglês
+* 🏛 Latim
+* ✝️ Catecismo
+* 🎨 Arte
+* 💰 Educação Financeira
+* 💡 Projeto
+
+### 🦅 Escolher para Mim
+
+O botão especial permanece disponível para que o próprio sistema selecione automaticamente a disciplina mais adequada para estudo naquele momento.
+
+---
+
+## 🏅 Conquistas Restauradas
+
+Nesta versão, a aba **Conquistas** retorna ao seu modelo clássico, inspirado na Versão 18.
+
+### Medalhas
+
+* 🥉 Primeira Missão
+* ✝️ Primeiro Sábado
+* 📖 Pequeno Catequista
+* 🏛 Discípulo de São Pio X
+* 🦅 Águia da Fé
+
+As conquistas são liberadas automaticamente conforme a evolução do aluno.
+
+---
+
+## 🗺️ Mapa da Jornada
+
+O sistema de progressão foi preservado:
+
+1. Aspirante
+2. Escudeiro
+3. Estudioso
+4. Discípulo
+5. Águia Jovem
+6. Guardião
+7. Águia Imperial
+
+Cada etapa representa uma evolução dentro da jornada do Projeto Águia.
+
+---
+
+## 📅 Calendário Anual
+
+Foram mantidas todas as referências pedagógicas implementadas nas versões anteriores.
+
+Ao selecionar qualquer data, o aluno poderá visualizar:
+
+* disciplinas do dia;
+* conteúdos previstos;
+* exercícios recomendados;
+* reforço baseado no boletim;
+* lição do Catecismo correspondente aos sábados.
+
+---
+
+## ✝️ Catecismo Anual
+
+O módulo Catecismo permanece como um dos pilares do projeto.
+
+### Recursos disponíveis
+
+* 52 lições anuais;
+* distribuição de uma leitura para cada sábado;
+* textos convertidos do PDF para HTML;
+* pesquisa interna;
+* favoritos;
+* barra de progresso;
+* sistema de XP;
+* medalhas;
+* leitor pedagógico;
+* salvamento automático.
+
+---
+
+## 📄 Boletim Inteligente
+
+O sistema de boletim continua preparado para:
+
+* importação de PDF;
+* importação de PNG, JPG e JPEG;
+* leitura automática por OCR;
+* atualização da tabela de notas;
+* sincronização com o Painel do Responsável.
+
+---
+
+## 👨 Painel do Responsável
+
+Permite acompanhar em tempo real:
+
+* notas escolares;
+* desempenho acadêmico;
+* progresso no Catecismo;
+* XP acumulado;
+* conquistas;
+* evolução geral da jornada.
+
+---
+
+## 💾 Persistência de Dados
+
+O aplicativo salva automaticamente:
+
+* progresso das missões;
+* perguntas respondidas;
+* evolução da Academia;
+* progresso do Catecismo;
+* boletim escolar;
+* XP;
+* medalhas;
+* conquistas;
+* histórico do aluno.
+
+Os dados permanecem armazenados localmente mesmo após o fechamento do navegador.
+
+---
+
+## 🚀 Alterações da Versão 27
+
+* ✅ Restauração da aba Conquistas no padrão clássico;
+* ✅ Mapa da Jornada restaurado;
+* ✅ Academia Inteligente com escolha livre de disciplinas;
+* ✅ Sistema de Prioridade Inteligente preservado;
+* ✅ Botão "🦅 Escolher para Mim";
+* ✅ Calendário Anual com referências pedagógicas;
+* ✅ Catecismo Anual mantido integralmente;
+* ✅ Boletim OCR sincronizado com o Painel do Responsável;
+* ✅ Interface simplificada com remoção da aba IA.
+
+---
+
+## 🔐 Senha padrão
+
+```text
+aguia2026
+```
+
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+v27/
+│
+├── index.html
+├── app.js
+├── styles.css
+├── manifest.json
+├── service-worker.js
+└── README.md
+```
+
+---
+
+## 🌐 Publicação
+
+Após enviar os arquivos para a pasta **v27**, o aplicativo estará disponível em:
+
+```text
+https://marciohenning.github.io/projeto-aguia/v27/
+```
+
+---
+
+## 📜 Filosofia do Projeto
+
+> **Cognoscere, amare et servire Deum.**
+
+**Conhecer, amar e servir a Deus.**
+
+---
+
+**Projeto Águia — Versão 27**
+
+**Release de Consolidação da Plataforma Educacional**
+
+© 2026
