@@ -1,0 +1,225 @@
+# 🦅 Projeto Águia — Versão 32
+
+## Visão Geral
+
+O **Projeto Águia** é uma plataforma de formação acadêmica, intelectual e espiritual desenvolvida para integrar os estudos, a disciplina e a formação cristã em uma única jornada.
+
+Inspirado nos princípios do **Trivium**, do **Quadrivium** e do **Catecismo Menor de São Pio X**, o aplicativo acompanha a evolução do aluno e auxilia o responsável no monitoramento do progresso escolar e religioso.
+
+A **Versão 32** apresenta uma importante evolução no sistema de acompanhamento da jornada, tornando as conquistas e a progressão muito mais visíveis e motivadoras.
+
+---
+
+# ✨ Novidades da Versão 32
+
+## 🏅 Novo Sistema de Conquistas
+
+A aba Conquistas foi aprimorada para mostrar claramente o avanço do aluno.
+
+Agora é possível visualizar:
+
+* conquistas desbloqueadas;
+* conquistas ainda pendentes;
+* progresso individual de cada medalha;
+* percentual geral de evolução.
+
+### Medalhas principais
+
+* 🥉 Primeira Missão
+* ✝️ Primeiro Sábado
+* 📖 Pequeno Catequista
+* 🏛 Discípulo de São Pio X
+* 🦅 Águia da Fé
+
+Cada conquista possui uma barra de progresso própria e uma indicação visual de desbloqueio.
+
+---
+
+## 🗺️ Mapa da Jornada Inteligente
+
+O sistema agora informa automaticamente em qual etapa da jornada o aluno se encontra.
+
+### Níveis
+
+1. Aspirante
+2. Escudeiro
+3. Estudioso
+4. Discípulo
+5. Águia Jovem
+6. Guardião
+7. Águia Imperial
+
+O nível atual é destacado visualmente.
+
+Também é exibido:
+
+* XP acumulado;
+* próximo nível;
+* quantidade de XP restante para avançar.
+
+---
+
+## 📊 Barra Geral de Evolução
+
+A nova barra de progresso apresenta o percentual total das conquistas principais já alcançadas.
+
+Exemplo:
+
+```text
+Conquistas: 3 / 5
+Progresso Geral: 60%
+```
+
+Isso permite ao aluno acompanhar sua evolução de forma simples e intuitiva.
+
+---
+
+## 🏛️ Academia Inteligente Livre
+
+Permanece disponível toda a lógica pedagógica construída nas versões anteriores.
+
+### 🦅 Prioridade Inteligente
+
+A Águia continua analisando:
+
+* desempenho acadêmico;
+* notas escolares;
+* histórico de respostas;
+* frequência de estudos.
+
+### 📚 Escolha Livre
+
+O aluno pode selecionar qualquer disciplina para estudo.
+
+### 🤖 Escolher para Mim
+
+O sistema continua oferecendo uma recomendação automática da disciplina que merece maior atenção.
+
+---
+
+## ✝️ Catecismo Anual
+
+O módulo Catecismo permanece preservado.
+
+### Recursos
+
+* 52 lições anuais;
+* textos convertidos do PDF para HTML;
+* leitura organizada para cada sábado;
+* barra de progresso;
+* favoritos;
+* pesquisa interna;
+* XP;
+* medalhas;
+* salvamento automático.
+
+---
+
+## 📄 Boletim OCR
+
+Mantém os recursos de:
+
+* importação de PDF;
+* importação de PNG, JPG e JPEG;
+* leitura automática por OCR;
+* atualização da tabela de notas;
+* sincronização com o Painel do Responsável.
+
+---
+
+## 👨 Área do Responsável
+
+Permite acompanhar:
+
+* desempenho escolar;
+* progresso na Academia;
+* evolução do Catecismo;
+* conquistas;
+* XP acumulado;
+* notas importadas.
+
+---
+
+## 🚀 Alterações da Versão 32
+
+* ✅ Novo sistema visual de conquistas;
+* ✅ Barras individuais de progresso;
+* ✅ Barra geral de evolução;
+* ✅ Identificação automática do nível atual;
+* ✅ Cálculo do XP necessário para o próximo nível;
+* ✅ Mapa da Jornada aprimorado;
+* ✅ Academia Inteligente preservada;
+* ✅ Catecismo Anual preservado;
+* ✅ Boletim OCR sincronizado;
+* ✅ Navegação PWA mantida.
+
+---
+
+## 💾 Persistência de Dados
+
+O aplicativo continua salvando automaticamente:
+
+* progresso das missões;
+* Academia;
+* Catecismo;
+* perguntas respondidas;
+* boletim escolar;
+* XP;
+* medalhas;
+* conquistas;
+* histórico do aluno.
+
+---
+
+## 🔐 Senha padrão
+
+```text
+aguia2026
+```
+
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+v32/
+│
+├── index.html
+├── app.js
+├── styles.css
+├── manifest.json
+├── service-worker.js
+└── README.md
+```
+
+---
+
+## 🌐 Publicação
+
+Após enviar os arquivos para a pasta **v32**, o aplicativo estará disponível em:
+
+```text
+https://marciohenning.github.io/projeto-aguia/v32/
+```
+
+---
+
+## 🔮 Próximos Passos
+
+A próxima evolução prevista para o Projeto Águia é a implementação de um banco de dados interno utilizando **IndexedDB**, juntamente com um sistema de **Backup e Restauração**, preparando a futura migração para uma versão nativa em React Native.
+
+---
+
+## 📜 Lema do Projeto
+
+> **Cognoscere, amare et servire Deum.**
+
+**Conhecer, amar e servir a Deus.**
+
+---
+
+**Projeto Águia — Versão 32**
+
+**Release de Evolução do Sistema de Conquistas e Progressão**
+
+© 2026
