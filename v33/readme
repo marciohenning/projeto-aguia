@@ -1,0 +1,181 @@
+# 🦅 Projeto Águia — Versão 33
+
+## Visão Geral
+
+O **Projeto Águia** é uma plataforma pedagógica, acadêmica e espiritual desenvolvida para acompanhar a formação integral do aluno, unindo estudos, disciplina, virtudes e crescimento na fé.
+
+Inspirado no **Trivium**, no **Quadrivium** e no **Catecismo Menor de São Pio X**, o aplicativo organiza a jornada de aprendizagem por meio de missões, desafios, conquistas e acompanhamento contínuo.
+
+---
+
+# ✨ Novidades da Versão 33
+
+## 🏅 Sistema de Conquistas Corrigido
+
+A aba **Conquistas** foi totalmente revisada para apresentar de forma clara a evolução do aluno.
+
+Agora são exibidos:
+
+* progresso geral das conquistas;
+* medalhas desbloqueadas;
+* medalhas ainda pendentes;
+* barras individuais de evolução;
+* percentual total de conclusão.
+
+### Medalhas disponíveis
+
+* 🥉 Primeira Missão
+* ✝️ Primeiro Sábado
+* 📖 Pequeno Catequista
+* 🏛 Discípulo de São Pio X
+* 🦅 Águia da Fé
+
+Cada conquista possui seu próprio acompanhamento visual.
+
+---
+
+## 🗺️ Mapa da Jornada
+
+O aluno pode acompanhar em qual etapa da formação se encontra.
+
+### Níveis da Jornada
+
+1. Aspirante
+2. Escudeiro
+3. Estudioso
+4. Discípulo
+5. Águia Jovem
+6. Guardião
+7. Águia Imperial
+
+O sistema informa:
+
+* nível atual;
+* XP acumulado;
+* próximo nível;
+* XP necessário para avançar.
+
+---
+
+## 🏛 Academia Inteligente
+
+Mantida toda a lógica desenvolvida nas versões anteriores:
+
+* Prioridade Inteligente;
+* Escolha livre de disciplinas;
+* Sugestão automática de estudos;
+* Histórico de perguntas respondidas.
+
+---
+
+## ✝️ Catecismo Anual
+
+O módulo Catecismo permanece preservado, incluindo:
+
+* 52 lições anuais;
+* textos convertidos do PDF para HTML;
+* pesquisa interna;
+* barra de progresso;
+* XP e medalhas;
+* salvamento automático.
+
+---
+
+## 📄 Boletim OCR
+
+Recursos mantidos:
+
+* importação de PDF;
+* importação de PNG, JPG e JPEG;
+* leitura automática por OCR;
+* atualização das notas;
+* sincronização com a Área do Responsável.
+
+---
+
+## 📱 Navegação PWA
+
+Permanecem disponíveis:
+
+* tela inicial simplificada;
+* atalhos rápidos;
+* navegação otimizada para celulares;
+* compatibilidade com Android e iPhone;
+* funcionamento offline.
+
+---
+
+## 🚀 Alterações da Versão 33
+
+* ✅ Correção da aba Conquistas;
+* ✅ Progresso visual das medalhas;
+* ✅ Barra geral de evolução;
+* ✅ Mapa da Jornada funcional;
+* ✅ Exibição do nível atual;
+* ✅ Cálculo do próximo objetivo;
+* ✅ Catecismo preservado;
+* ✅ Academia preservada;
+* ✅ Boletim OCR preservado;
+* ✅ Estrutura preparada para futuras melhorias com banco de dados interno.
+
+---
+
+## 🔮 Próxima Evolução Planejada
+
+**Versão 34**
+
+Implementação de:
+
+* Banco de Dados Interno (IndexedDB);
+* Sistema de Backup e Restauração;
+* Exportação e Importação do progresso do aluno;
+* Preparação para futura migração para React Native.
+
+---
+
+## 🔐 Senha padrão
+
+```text
+aguia2026
+```
+
+---
+
+## 📁 Estrutura
+
+```text
+v33/
+│
+├── index.html
+├── app.js
+├── styles.css
+├── manifest.json
+├── service-worker.js
+└── README.md
+```
+
+---
+
+## 🌐 Publicação
+
+Após enviar os arquivos para a pasta **v33**, o aplicativo estará disponível em:
+
+```text
+https://marciohenning.github.io/projeto-aguia/v33/
+```
+
+---
+
+## 📜 Lema do Projeto
+
+> **Cognoscere, amare et servire Deum.**
+
+**Conhecer, amar e servir a Deus.**
+
+---
+
+**Projeto Águia — Versão 33**
+
+**Release de Correção do Sistema de Conquistas e Evolução da Jornada**
+
+© 2026
