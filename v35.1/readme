@@ -1,0 +1,135 @@
+# Projeto Águia — Base de Perguntas V35.1
+
+**Lema:** *Cognoscere, amare et servire Deum.*
+
+## Objetivo
+
+Esta base de dados foi criada para alimentar a aba **Academia** do Projeto Águia, oferecendo exercícios de revisão e fixação para o estudante.
+
+O objetivo é proporcionar uma aprendizagem gradual, consistente e personalizada, incentivando o hábito diário do estudo.
+
+---
+
+## Disciplinas disponíveis
+
+* Matemática
+* Português
+* Ciências
+* História
+* Geografia
+* Inglês
+* Catecismo
+* Educação Financeira
+* Latim
+
+---
+
+## Estrutura das perguntas
+
+Cada pergunta contém:
+
+* Identificador único (`id`);
+* Nível de dificuldade (`facil`, `medio` ou `dificil`);
+* Tema;
+* Enunciado;
+* Alternativas;
+* Resposta correta;
+* Explicação curta.
+
+Exemplo:
+
+```json
+{
+  "id": "mat-001",
+  "nivel": "facil",
+  "tema": "Porcentagem",
+  "pergunta": "Quanto é 10% de 200?",
+  "opcoes": ["10", "20", "30", "40"],
+  "resposta": 1,
+  "explicacao": "10% de 200 é 20."
+}
+```
+
+---
+
+## Funcionamento da Academia
+
+O estudante poderá escolher:
+
+### Disciplina
+
+Exemplos:
+
+* Matemática;
+* Português;
+* Catecismo.
+
+### Quantidade de perguntas
+
+* 5 perguntas;
+* 10 perguntas;
+* 20 perguntas;
+* 30 perguntas;
+* 50 perguntas.
+
+### Nível de dificuldade
+
+* Fácil;
+* Médio;
+* Difícil;
+* Misto.
+
+---
+
+## Registro de desempenho
+
+O Projeto Águia registrará:
+
+* Data da atividade;
+* Disciplina escolhida;
+* Quantidade de questões;
+* Número de acertos;
+* Número de erros;
+* XP obtido;
+* Tempo de resolução (implementação futura).
+
+Esses dados poderão ser utilizados para acompanhar a evolução do estudante.
+
+---
+
+## Progressão da base de dados
+
+A presente versão constitui uma base inicial.
+
+Meta de expansão:
+
+* Matemática: 100 perguntas;
+* Português: 100 perguntas;
+* Catecismo: 100 perguntas;
+* Ciências: 60 perguntas;
+* História: 60 perguntas;
+* Geografia: 60 perguntas;
+* Inglês: 60 perguntas;
+* Educação Financeira: 60 perguntas;
+* Latim: 40 perguntas.
+
+---
+
+## Futuras implementações
+
+* Sorteio inteligente sem repetição;
+* Revisão automática de erros;
+* Priorização das disciplinas com menor desempenho;
+* Importação de novas bases em JSON;
+* Backup e restauração;
+* Estatísticas detalhadas;
+* Integração com o boletim escolar;
+* Recomendações automáticas do Tutor Águia.
+
+---
+
+## Missão educativa
+
+O Projeto Águia busca formar estudantes disciplinados, virtuosos e preparados para a vida, unindo excelência acadêmica, educação financeira e formação cristã.
+
+*"Cognoscere, amare et servire Deum."*
