@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Projeto Águia">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>Projeto Águia V35.2.14.14</title>
+<link rel="manifest" href="manifest.json"><link rel="stylesheet" href="styles.css">
+<script defer src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+</head>
+<body>
+<div id="lock" class="lock"><div class="box"><div class="logo">🦅</div><h1>Projeto Águia V35.2.14.14</h1><p class="latin">Cognoscere, amare et servire Deum.</p><input id="pass" type="password" placeholder="Senha familiar"><button id="enter">Entrar</button><small>Senha: aguia2026</small></div></div>
+<div id="app" class="hidden">
+<header><h1>🦅 Projeto Águia V35.2.14.14</h1><p class="latin">Cognoscere, amare et servire Deum.</p><p>Academia Inteligente • Banco de Perguntas • IndexedDB</p></header>
+<main>
+<section class="card hero"><div><h2>Missão do Dia</h2><p id="missionText">Complete tudo para liberar R$ 10.</p><div class="bar"><div id="dayBar"></div></div><small id="dayPct">0%</small></div><div class="money"><span id="todayMoney">R$ 0</span><small>hoje</small></div></section>
+<section class="card eagle-tip"><h2>🦅 Mensagem da Águia</h2><p id="eagleMessage"></p></section>
+<nav class="tabs">
+<button data-tab="journey" class="active">Minha Jornada</button><button data-tab="today">Missão</button><button data-tab="annual">Calendário</button><button data-tab="catechism">Catecismo Anual</button><button data-tab="academy">Academia</button><button data-tab="grades">Boletim OCR</button><button data-tab="achievements">Conquistas</button><button data-tab="more">Mais</button><button data-tab="parent">Responsável</button><button data-tab="backup">Backup</button>
+</nav>
+
+<section id="journey" class="panel active">
+<div class="card journey-card">
+<h2>🦅 Início</h2>
+<p class="muted">Escolha rapidamente para onde deseja ir.</p>
+<div class="quick-grid">
+<button data-tab="today" class="quick-card">🎯<b>Missão</b><small>Ver tarefas de hoje</small></button>
+<button data-tab="catechism" class="quick-card">✝️<b>Catecismo</b><small>Continuar leitura</small></button>
+<button data-tab="academy" class="quick-card">🏛️<b>Academia</b><small>Responder perguntas</small></button>
+<button data-tab="annual" class="quick-card">📅<b>Calendário</b><small>Ver planejamento</small></button>
+<button data-tab="grades" class="quick-card">📄<b>Boletim</b><small>Notas e OCR</small></button>
+<button data-tab="achievements" class="quick-card">🏅<b>Conquistas</b><small>Ver progresso</small></button>
+</div>
+</div>
+<div class="card journey-card">
+<h2>🦅 Minha Jornada</h2>
+<div id="journeyContent"></div>
+<div class="journey-controls"><button id="journeyPrev" class="secondary">◀ Voltar</button><button id="journeyNext">Próximo ▶</button></div>
+<button id="restartJourney" class="ghost">Rever do começo</button>
+</div>
+</section>
+
+<section id="today class="panel"><div class="card"><h2 id="todayTitle"></h2><div id="tasks"></div><button id="goParent">Pedir aprovação</button></div><div class="card"><h2>Desafio do Dia</h2><div id="challenge"></div></div></section>
+
+<section id="annual" class="panel">
+<div class="card">
+<h2>📅 Calendário Anual</h2>
+<p class="muted">Toque em qualquer data para ver a missão, as disciplinas, o conteúdo previsto, os exercícios, os reforços e a lição do Catecismo quando for sábado.</p>
+<div class="legend">
+<span class="tag gram">📘 Gramática</span>
+<span class="tag dial">⚖️ Dialética</span>
+<span class="tag rhet">🎙️ Retórica</span>
+<span class="tag quad">📐 Quadrivium</span>
+<span class="tag syn">🏆 Síntese</span>
+<span class="tag cat">✝️ Catecismo</span>
+</div>
+<div class="details">
+<b>Referências do calendário:</b><br>
+✓ Disciplinas do dia<br>
+✓ Conteúdos previstos<br>
+✓ Exercícios recomendados<br>
+✓ Reforço por boletim<br>
+✓ Lição do Catecismo aos sábados
+</div>
+<div id="annualCalendar"></div>
+<div id="annualDetails" class="details"></div>
+</div>
+</section>
+
+<section id="catechism" class="panel">
+<div class="card"><h2>✝️ Catecismo Anual</h2><div class="grid"><div><b id="cateProgress">0%</b><small>progresso</small></div><div><b id="cateDone">0/52</b><small>sábados</small></div><div><b id="cateXP">0 XP</b><small>catecismo</small></div><div><b id="cateMedal">Primeiro Sábado</b><small>medalha</small></div></div><div class="bar"><div id="cateBar"></div></div><button id="continueCatechism">Continuar leitura deste sábado</button></div>
+<div class="card"><h2>🔎 Buscar no Catecismo</h2><input id="cateSearch" class="search" placeholder="Buscar: Credo, pecado, sacramentos..."><div id="cateSearchResults"></div></div>
+<div class="card"><h2>📖 Leitor Pedagógico</h2><div id="cateReader"></div></div>
+<div class="card"><h2>⭐ Favoritos</h2><div id="cateFavorites"></div></div>
+<div class="card"><h2>📅 52 Sábados do Ano</h2><div id="cateSchedule"></div></div>
+</section>
+
+<section id="academy" class="panel">
+<div class="card"><h2>🏛️ Academia Inteligente</h2><p class="muted">A prioridade inteligente orienta, mas João Miguel pode escolher livremente qualquer disciplina para estudar.</p>
+<div id="academyPriority" class="details"></div>
+<label class="label"><b>Escolher disciplina:</b></label>
+<select id="disciplineSelect"></select>
+
+<div class="academy-config">
+  <label class="label"><b>Quantidade de perguntas:</b></label>
+  <select id="questionCountSelect">
+<option value="10">10 perguntas</option>
+<option value="20">20 perguntas</option>
+<option value="30">30 perguntas</option>
+<option value="50" selected>50 perguntas</option>
+<option value="100">100 perguntas</option>
+</select>
+
+  <label class="label"><b>Dificuldade:</b></label>
+  <select id="difficultySelect">
+    <option value="misto" selected>Misto</option>
+    <option value="facil">Fácil</option>
+    <option value="medio">Médio</option>
+    <option value="dificil">Difícil</option>
+  </select>
+
+  <button id="startAcademySession">▶ Começar treino</button>
+</div>
+
+<div id="academySessionStatus" class="details"></div>
+<div id="subjects" class="subject-list"></div>
+<div id="quiz"></div>
+<button id="smartQuestion" class="ghost">🦅 Escolher para mim</button>
+<button id="resetQuestionHistory" class="ghost">Reiniciar histórico de perguntas</button></div>
+<div class="card"><h2>📊 Desempenho na Academia</h2><div id="academyStats"></div></div>
+<div class="card"><h2>📚 Conteúdos por disciplina</h2><div id="curriculum"></div></div>
+</section>
+
+<section id="grades" class="panel">
+<div class="card"><h2>📄 Boletim com OCR</h2><p class="muted">Importe imagem do boletim para tentativa de OCR. Revise antes de aplicar.</p><input id="reportFile" type="file" accept=".pdf,image/png,image/jpeg,image/jpg,image/*"><div id="ocrStatus" class="details">Aguardando arquivo.</div><div id="reportPreview" class="report-preview"></div></div>
+<div class="card"><h2>🧾 Texto lido pelo OCR</h2><textarea id="ocrText" placeholder="O texto extraído aparecerá aqui."></textarea><button id="parseGrades">Detectar notas e preencher tabela</button><div id="parseResult" class="details"></div></div>
+<div class="card"><h2>📊 Tabela de Notas por Bimestre</h2><div id="gradesTable"></div><button id="saveGrades">Salvar notas</button><button id="exportGrades" class="ghost">Exportar boletim JSON</button><input id="importGrades" type="file" accept=".json" class="file-input"><label for="importGrades" class="fake-button">Importar boletim JSON</label></div>
+</section>
+
+<section id="achievements" class="panel">
+<div class="card">
+<h2>🏅 Conquistas</h2>
+<p class="muted">Veja o que já foi desbloqueado e o que ainda falta conquistar.</p>
+<div id="achievementSummary">
+  <div class="achievement-summary">
+    <b>Progresso das conquistas: 0/5</b>
+    <div class="progress-line"><span style="width:0%"></span></div>
+    <small>0% das conquistas principais desbloqueadas.</small>
+  </div>
+</div>
+<div id="achievementList">
+  <div class="achievement locked"><b>🥉 Primeira missão</b><br><small>Falta: Aprovar a primeira missão.</small><div class="progress-line"><span style="width:0%"></span></div><small>0%</small></div>
+  <div class="achievement locked"><b>✝️ Primeiro Sábado</b><br><small>Falta: Concluir a primeira lição do Catecismo.</small><div class="progress-line"><span style="width:0%"></span></div><small>0%</small></div>
+  <div class="achievement locked"><b>📖 Pequeno Catequista</b><br><small>Falta: Concluir 10 sábados.</small><div class="progress-line"><span style="width:0%"></span></div><small>0%</small></div>
+  <div class="achievement locked"><b>🏛 Discípulo de São Pio X</b><br><small>Falta: Concluir 25 sábados.</small><div class="progress-line"><span style="width:0%"></span></div><small>0%</small></div>
+  <div class="achievement locked"><b>🦅 Águia da Fé</b><br><small>Falta: Concluir 52 sábados.</small><div class="progress-line"><span style="width:0%"></span></div><small>0%</small></div>
+</div>
+</div>
+<div class="card">
+<h2>🗺️ Mapa da Jornada</h2>
+<p class="muted">Acompanhe o nível atual e o próximo objetivo.</p>
+<div id="journeyLevel">
+  <div class="journey-level-card">
+    <div>🦅 Nível atual</div>
+    <div class="level-name">1. Aspirante</div>
+    <small>0 XP acumulados</small>
+    <div class="progress-line"><span style="width:0%"></span></div>
+    <div class="next-goal">Próximo nível: <b>Escudeiro</b> — faltam 50 XP.</div>
+  </div>
+</div>
+<div id="campaignMap">
+  <div class="campaign-step current done"><b>1. Aspirante</b><br><small>Desbloqueado com 0 XP</small></div>
+  <div class="campaign-step locked"><b>2. Escudeiro</b><br><small>Desbloqueia com 50 XP</small></div>
+  <div class="campaign-step locked"><b>3. Estudioso</b><br><small>Desbloqueia com 100 XP</small></div>
+  <div class="campaign-step locked"><b>4. Discípulo</b><br><small>Desbloqueia com 150 XP</small></div>
+  <div class="campaign-step locked"><b>5. Águia Jovem</b><br><small>Desbloqueia com 200 XP</small></div>
+  <div class="campaign-step locked"><b>6. Guardião</b><br><small>Desbloqueia com 250 XP</small></div>
+  <div class="campaign-step locked"><b>7. Águia Imperial</b><br><small>Desbloqueia com 300 XP</small></div>
+</div>
+</div>
+</section>
+
+<section id="more" class="panel">
+<div class="card">
+<h2>☰ Mais opções</h2>
+<p class="muted">Acesse as áreas secundárias do Projeto Águia.</p>
+<div class="quick-grid">
+<button data-tab="annual" class="quick-card">📅<b>Calendário</b><small>Planejamento anual</small></button>
+<button data-tab="grades" class="quick-card">📄<b>Boletim OCR</b><small>Notas e importação</small></button>
+<button data-tab="achievements" class="quick-card">🏅<b>Conquistas</b><small>Medalhas e jornada</small></button>
+<button data-tab="parent" class="quick-card">👨<b>Responsável</b><small>Acompanhamento</small></button>
+<button data-tab="backup" class="quick-card">💾<b>Backup</b><small>Exportar e restaurar</small></button>
+<button data-tab="journey" class="quick-card">🦅<b>Início</b><small>Voltar ao começo</small></button>
+</div>
+</div>
+</section>
+
+<section id="backup" class="panel">
+<div class="card">
+<h2>💾 Backup do Projeto Águia</h2>
+<p class="muted">Proteja o progresso do aluno exportando ou restaurando um backup completo.</p>
+<div id="dbStatus" class="details">Verificando banco interno...</div>
+<div class="grid">
+<div><b id="backupVersion">V35</b><small>versão</small></div>
+<div><b id="backupRecords">0</b><small>registros</small></div>
+<div><b id="lastBackup">Nunca</b><small>último backup</small></div>
+<div><b id="dbHealth">Banco local</b><small>status</small></div>
+</div>
+<button id="exportBackup">📤 Exportar Backup JSON</button>
+<input id="importBackupFile" type="file" accept=".json,application/json" class="file-input">
+<label for="importBackupFile" class="fake-button">📥 Importar Backup JSON</label>
+<button id="restoreLastBackup" class="ghost">🔄 Restaurar último backup salvo</button>
+<button id="migrateToDB" class="ghost">🗄️ Migrar dados para IndexedDB</button>
+<button id="clearDB" class="ghost danger">🧹 Limpar banco interno</button>
+<div id="backupLog" class="details"></div>
+</div>
+<div class="card">
+<h2>O que entra no backup?</h2>
+<div class="item"><b>✓ Missões, XP e recompensas</b><br><small>Inclui aprovações do responsável e evolução da jornada.</small></div>
+<div class="item"><b>✓ Catecismo Anual</b><br><small>Progresso, favoritos e XP do Catecismo.</small></div>
+<div class="item"><b>✓ Academia</b><br><small>Histórico de perguntas e estatísticas por disciplina.</small></div>
+<div class="item"><b>✓ Boletim OCR</b><br><small>Notas e texto OCR salvo.</small></div>
+</div>
+</section>
+
+<section id="parent" class="panel"><div class="card"><h2>👨 Painel do Responsável</h2><div class="grid"><div><b id="weekMoney">R$ 0</b><small>semana</small></div><div><b id="tasksDone">0/0</b><small>tarefas hoje</small></div><div><b id="critical">Matemática</b><small>prioridade</small></div><div><b id="xp">0 XP</b><small>experiência</small></div></div><button id="approve">Aprovar missão e liberar R$ 10</button><p id="approval"></p></div><div class="card"><h2>📊 Notas sincronizadas do Boletim</h2><div id="parentGradesTable"></div></div><div class="card"><h2>🏛️ Desempenho na Academia</h2><div id="parentAcademyStats"></div></div><div class="card"><h2>✝️ Formação Cristã</h2><div id="parentCatechism"></div></div><div class="card"><button id="export">Exportar progresso</button><button id="logout">Bloquear app</button></div></section>
+</main>
+<nav class="bottom">
+<button data-tab="journey">Início</button>
+<button data-tab="today">Missão</button>
+<button data-tab="academy">Academia</button>
+<button data-tab="catechism">Catecismo</button>
+<button data-tab="more">Mais</button>
+</nav>
+</div><script src="app.js"></script></body></html>
