@@ -1,0 +1,104 @@
+# 🦅 Projeto Águia V35.3 — Academia 500
+
+**Lema:** *Cognoscere, amare et servire Deum.*
+
+## O que mudou nesta versão
+
+A Academia Inteligente foi ampliada para permitir treinos reais de 5, 10, 20, 30 ou 50 perguntas.
+
+Antes, cada disciplina possuía apenas 10 perguntas. Por isso, mesmo escolhendo 50, o app só conseguia usar o limite disponível.
+
+Agora cada disciplina principal possui **500 perguntas**, distribuídas assim:
+
+- 170 perguntas fáceis;
+- 170 perguntas médias;
+- 160 perguntas difíceis.
+
+## Disciplinas com 500 perguntas
+
+- Matemática;
+- Geometria;
+- Português;
+- Ciências;
+- História;
+- Geografia;
+- Inglês;
+- Catecismo;
+- Educação Financeira;
+- Latim.
+
+## Banco de perguntas
+
+Os arquivos ficam em:
+
+```text
+data/
+└── perguntas/
+```
+
+Cada disciplina possui seu próprio JSON:
+
+```text
+matematica.json
+geometria.json
+portugues.json
+ciencias.json
+historia.json
+geografia.json
+ingles.json
+catecismo.json
+educacao_financeira.json
+latim.json
+index.json
+```
+
+## Funcionamento da Academia
+
+O estudante pode escolher:
+
+- disciplina;
+- quantidade de perguntas: 5, 10, 20, 30 ou 50;
+- dificuldade: fácil, médio, difícil ou misto.
+
+O app sorteia as perguntas da base disponível e registra o desempenho.
+
+## Observação
+
+Esta versão aumenta a base de perguntas para fins de desenvolvimento e testes da Academia. As questões podem e devem ser refinadas gradualmente nas próximas versões com conteúdo mais aprofundado, alinhado ao currículo escolar e ao Catecismo.
+
+## Próximas melhorias
+
+- revisão de erros;
+- repetição espaçada;
+- importação de novas bases;
+- relatórios por disciplina;
+- integração com boletim escolar;
+- migração da Academia para a versão React Native.
+
+
+---
+
+## V35.7 — Banco Pedagógico Atualizado
+
+Esta versão preserva os arquivos principais da V35.4:
+
+- app.js
+- index.html
+- manifest.json
+- README.md
+- service-worker.js
+- styles.css
+
+A pasta `data/perguntas/` foi substituída pela base pedagógica da V35.7, com 11 disciplinas:
+
+- Matemática
+- Geometria
+- Português
+- Catecismo
+- Ciências
+- História
+- Geografia
+- Inglês
+- Educação Financeira
+- Artes
+- Latim
