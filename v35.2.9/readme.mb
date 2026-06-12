@@ -1,0 +1,340 @@
+# 🦅 Projeto Águia V35.2.9
+### Academia Inteligente Corrigida
+
+> **Cognoscere, amare et servire Deum.**
+>
+> *Conhecer, amar e servir a Deus.*
+
+---
+
+# 📖 Sobre o Projeto
+
+O Projeto Águia é uma Plataforma Web Progressiva (PWA) desenvolvida para auxiliar estudantes do Ensino Fundamental em sua formação acadêmica, humana, financeira e espiritual.
+
+O sistema combina:
+
+- reforço escolar;
+- gamificação;
+- disciplina diária;
+- educação financeira;
+- formação cristã;
+- acompanhamento de desempenho;
+- funcionamento offline.
+
+---
+
+# 🚀 V35.2.9 — Academia Inteligente Corrigida
+
+Esta versão foi construída utilizando a estrutura estável da V35.2, preservando todos os recursos visuais e funcionais que já estavam aprovados.
+
+O principal objetivo desta atualização foi corrigir as limitações existentes na Academia Inteligente.
+
+---
+
+# ✅ Correções implementadas
+
+## 1. Quantidade livre de perguntas
+
+Anteriormente, a Academia limitava o desempenho a 10 questões por disciplina.
+
+Agora o usuário pode escolher:
+
+- 10 perguntas;
+- 20 perguntas;
+- 30 perguntas;
+- 50 perguntas;
+- 100 perguntas.
+
+A quantidade selecionada será efetivamente utilizada durante o treino.
+
+---
+
+## 2. Percentual real de desempenho
+
+O percentual da Academia passou a considerar todas as questões respondidas.
+
+Exemplo:
+
+Se João Miguel escolher:
+
+```
+Português
+50 perguntas
+```
+
+e acertar:
+
+```
+35 questões
+```
+
+o desempenho registrado será:
+
+```
+35/50 acertos = 70%
+```
+
+e não mais:
+
+```
+7/10 = 70%
+```
+
+limitado artificialmente.
+
+---
+
+## 3. Histórico verdadeiro
+
+Cada treino realizado registra:
+
+- disciplina;
+- data;
+- quantidade respondida;
+- quantidade de acertos;
+- dificuldade escolhida;
+- XP conquistado.
+
+Exemplo:
+
+```
+2026-06-12 — Português: 35/50 • +175 XP
+```
+
+---
+
+## 4. Geometria integrada
+
+A disciplina Geometria passou a aparecer corretamente em:
+
+### Desempenho da Academia
+
+Exibindo:
+
+```
+Acertos totais;
+Questões respondidas;
+Percentual;
+```
+
+assim como as demais disciplinas.
+
+---
+
+## 5. Conteúdos por disciplina
+
+A seção:
+
+```
+Conteúdos por disciplina
+```
+
+agora muda dinamicamente conforme a disciplina selecionada.
+
+Exemplo:
+
+### Matemática
+
+- Porcentagem
+- Equações
+- Frações
+- Estatística
+- Probabilidade
+- Regra de três
+
+### Geometria
+
+- Ângulos
+- Área
+- Perímetro
+- Figuras planas
+- Pitágoras
+- Sólidos geométricos
+
+### Português
+
+- Interpretação
+- Ortografia
+- Classes gramaticais
+- Produção textual
+- Pontuação
+- Concordância
+
+---
+
+# 📚 Banco Pedagógico
+
+O banco de perguntas foi sincronizado com a pasta:
+
+```
+data/perguntas/
+```
+
+---
+
+## Disciplinas disponíveis
+
+### Formação Escolar
+
+- Português
+- Matemática
+- Geometria
+- Ciências
+- História
+- Geografia
+- Inglês
+
+### Formação Complementar
+
+- Educação Financeira
+- Arte
+
+### Formação Cristã
+
+- Catecismo Menor de São Pio X
+- Latim
+
+### Projeto
+
+- Pesquisa
+- Apresentação oral
+
+---
+
+# 📂 Estrutura do projeto
+
+```text
+Projeto_Aguia/
+├── app.js
+├── index.html
+├── manifest.json
+├── README.md
+├── service-worker.js
+├── styles.css
+└── data/
+    └── perguntas/
+        ├── portugues.json
+        ├── matematica.json
+        ├── geometria.json
+        ├── ciencias.json
+        ├── historia.json
+        ├── geografia.json
+        ├── ingles.json
+        ├── educacao_financeira.json
+        ├── arte.json
+        ├── catecismo.json
+        ├── latim.json
+        └── index.json
+```
+
+---
+
+# 🧠 Estrutura das questões
+
+Cada questão utiliza o seguinte padrão:
+
+```json
+{
+  "id": "mat-001",
+  "nivel": "facil",
+  "tema": "Porcentagem",
+  "pergunta": "Quanto é 20% de 150?",
+  "opcoes": [
+    "20",
+    "30",
+    "40",
+    "50"
+  ],
+  "resposta": 1,
+  "explicacao": "20% de 150 corresponde a 30."
+}
+```
+
+---
+
+# 🔎 Campo "resposta"
+
+O campo:
+
+```json
+"resposta"
+```
+
+representa o índice da alternativa correta.
+
+| Valor | Alternativa |
+|---------|-------------|
+| 0 | Primeira |
+| 1 | Segunda |
+| 2 | Terceira |
+| 3 | Quarta |
+
+Exemplo:
+
+```json
+"resposta": 2
+```
+
+significa que a terceira alternativa é a correta.
+
+---
+
+# 🏅 Recursos do Projeto Águia
+
+- Academia Inteligente;
+- Missão diária;
+- Sistema de XP;
+- Conquistas;
+- Calendário anual;
+- Catecismo anual;
+- Histórico de desempenho;
+- Funcionamento offline (PWA);
+- Backup local;
+- OCR para boletins (experimental);
+- Página do responsável.
+
+---
+
+# 🎯 Objetivos pedagógicos
+
+O Projeto Águia busca desenvolver:
+
+- disciplina;
+- autonomia;
+- perseverança;
+- responsabilidade;
+- amor ao conhecimento;
+- virtudes cristãs;
+- educação financeira;
+- excelência acadêmica.
+
+---
+
+# 🔮 Próximas versões
+
+## V35.3
+
+- Ampliação editorial das questões;
+- Novos conteúdos por disciplina;
+- Estatísticas avançadas.
+
+## V36
+
+- Integração com React Native;
+- SQLite local;
+- Histórico expandido;
+- Melhor sincronização de progresso.
+
+---
+
+# 📜 Lema
+
+> **Cognoscere, amare et servire Deum.**
+
+*"Conhecer, amar e servir a Deus."*
+
+---
+
+**Projeto Águia © 2026**
+
+Desenvolvido para auxiliar estudantes na busca da excelência acadêmica, humana e espiritual.
