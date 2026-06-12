@@ -1,0 +1,199 @@
+# 🦅 Projeto Águia V35.7 Final
+### Cognoscere, amare et servire Deum.
+
+Projeto Águia é uma Plataforma Web Progressiva (PWA) desenvolvida para auxiliar estudantes do Ensino Fundamental na formação acadêmica, humana, espiritual e financeira, unindo reforço escolar, catequese, disciplina diária e gamificação.
+
+---
+
+## 📌 Sobre esta versão
+
+A V35.7 Final preserva integralmente a estrutura técnica estável da V35.4, substituindo apenas a base pedagógica utilizada pela Academia Inteligente.
+
+Foram mantidos os arquivos originais:
+
+- app.js
+- index.html
+- manifest.json
+- README.md
+- service-worker.js
+- styles.css
+
+Dessa forma, o comportamento da aplicação permanece o mesmo, garantindo compatibilidade e estabilidade.
+
+---
+
+## 🆕 Atualizações da V35.7
+
+### Banco Pedagógico Atualizado
+
+A pasta antiga:
+
+```
+data/
+```
+
+foi substituída pela nova base pedagógica oficial:
+
+```
+data/
+└── perguntas/
+```
+
+contendo perguntas organizadas por disciplina.
+
+---
+
+## 📚 Disciplinas disponíveis
+
+### Ensino Fundamental
+
+- Português
+- Matemática
+- Geometria
+- Ciências
+- História
+- Geografia
+
+### Formação Complementar
+
+- Inglês
+- Educação Financeira
+- Artes
+
+### Formação Cristã
+
+- Catecismo Menor de São Pio X
+- Latim
+
+---
+
+## 📖 Estrutura dos arquivos
+
+```
+Projeto_Aguia/
+├── app.js
+├── index.html
+├── manifest.json
+├── README.md
+├── service-worker.js
+├── styles.css
+└── data/
+    └── perguntas/
+        ├── artes.json
+        ├── catecismo.json
+        ├── ciencias.json
+        ├── educacao_financeira.json
+        ├── geografia.json
+        ├── geometria.json
+        ├── historia.json
+        ├── index.json
+        ├── ingles.json
+        ├── latim.json
+        ├── matematica.json
+        └── portugues.json
+```
+
+---
+
+## 📝 Estrutura das questões
+
+Cada pergunta utiliza o formato:
+
+```json
+{
+  "id": "mat-001",
+  "nivel": "facil",
+  "tema": "Porcentagem",
+  "pergunta": "Quanto é 20% de 150?",
+  "opcoes": [
+    "20",
+    "30",
+    "40",
+    "50"
+  ],
+  "resposta": 1,
+  "explicacao": "20% de 150 corresponde a 30."
+}
+```
+
+---
+
+## ✅ Índice das respostas
+
+O campo:
+
+```json
+"resposta"
+```
+
+representa a posição da alternativa correta:
+
+| Valor | Alternativa |
+|---------|-------------|
+| 0 | Primeira |
+| 1 | Segunda |
+| 2 | Terceira |
+| 3 | Quarta |
+
+Exemplo:
+
+```json
+"resposta": 2
+```
+
+significa que a terceira alternativa é a correta.
+
+---
+
+## 🎯 Objetivos do Projeto Águia
+
+- Incentivar o hábito diário de estudo;
+- Melhorar o desempenho escolar;
+- Desenvolver responsabilidade e disciplina;
+- Ensinar educação financeira desde cedo;
+- Promover a formação cristã;
+- Integrar recompensas e gamificação;
+- Estimular o amor ao conhecimento e à virtude.
+
+---
+
+## 🏅 Recursos do Projeto
+
+- Academia Inteligente;
+- Missão diária;
+- Sistema de XP;
+- Conquistas;
+- Calendário anual;
+- Catecismo anual;
+- Controle de progresso;
+- Funcionalidade offline (PWA);
+- Backup local dos dados.
+
+---
+
+## 🚀 Próximas versões planejadas
+
+### V35.8
+- Ampliação do banco pedagógico;
+- Revisão editorial das questões;
+- Inclusão gradual de novas disciplinas.
+
+### V36+
+- Integração com React Native;
+- SQLite local;
+- Histórico avançado;
+- OCR para boletins;
+- Sincronização com responsável.
+
+---
+
+## 📜 Lema
+
+> *Cognoscere, amare et servire Deum.*
+>
+> "Conhecer, amar e servir a Deus."
+
+---
+
+Projeto Águia © 2026
+Desenvolvido para auxiliar estudantes na busca da excelência acadêmica, humana e espiritual.
