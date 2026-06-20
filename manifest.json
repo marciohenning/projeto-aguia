@@ -1,9 +1,11 @@
 {
-  "name": "Projeto Águia 2026",
-  "short_name": "Águia 2026",
+  "name": "Projeto Águia V35.2",
+  "short_name": "Águia V35.2",
   "start_url": "./index.html",
   "display": "standalone",
+  "theme_color": "#0f2f70",
   "background_color": "#f4f7fb",
-  "theme_color": "#1d4ed8",
-  "icons": []
+  "orientation": "portrait-primary",
+  "scope": "./",
+  "description": "Projeto Águia com IndexedDB, backup e restauração."
 }
